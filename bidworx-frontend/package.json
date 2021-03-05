@@ -4,7 +4,8 @@
   "description": "App for client-freelancer connection",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "cd .. && cd bidworx-backend && rails server"
   },
   "repository": {
     "type": "git",
