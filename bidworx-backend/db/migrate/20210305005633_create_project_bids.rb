@@ -5,8 +5,8 @@ class CreateProjectBids < ActiveRecord::Migration[6.1]
       t.float :price
       t.datetime :drop_date
 
-      t.references :freelancers
-      t.references :projects
+      t.references :freelancer
+      t.references :project
 
       t.timestamps
     end

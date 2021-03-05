@@ -47,3 +47,1006 @@ Migrating to CreateProjectBids (20210305005633)
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mMarketplace Load (0.7ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces"[0m
+  [1m[36mClient Load (0.7ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  [1m[36mFreelancer Load (0.8ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers"[0m
+  [1m[36mProjectBid Load (0.7ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (2.0ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Francine Monahan"], ["username", "genna.kunde"], ["created_at", "2021-03-05 02:17:41.006335"], ["updated_at", "2021-03-05 02:17:41.006335"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.3ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Wiley Little Esq."], ["username", "jaymie"], ["created_at", "2021-03-05 02:17:41.014085"], ["updated_at", "2021-03-05 02:17:41.014085"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.3ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Francine Weimann"], ["username", "aubrey"], ["created_at", "2021-03-05 02:17:41.018518"], ["updated_at", "2021-03-05 02:17:41.018518"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mMarketplace Load (0.2ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces"[0m
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.5ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 1]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.4ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 2]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.3ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 3]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  [1m[36mFreelancer Load (0.1ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers"[0m
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.4ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Eduardo Walsh DVM"], ["username", "jude.harris"], ["created_at", "2021-03-05 02:18:31.893722"], ["updated_at", "2021-03-05 02:18:31.893722"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.4ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Ismael Kunde"], ["username", "keesha"], ["created_at", "2021-03-05 02:18:31.899683"], ["updated_at", "2021-03-05 02:18:31.899683"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.3ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Elisha Braun"], ["username", "damion"], ["created_at", "2021-03-05 02:18:31.904242"], ["updated_at", "2021-03-05 02:18:31.904242"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mMarketplace Load (0.1ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces"[0m
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.4ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 4]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.3ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 5]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.3ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 6]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers"[0m
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.4ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Jarrett Harber"], ["username", "heath_hettinger"], ["created_at", "2021-03-05 02:19:28.561401"], ["updated_at", "2021-03-05 02:19:28.561401"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.4ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Joseph Abshire VM"], ["username", "norris.kunze"], ["created_at", "2021-03-05 02:19:28.567425"], ["updated_at", "2021-03-05 02:19:28.567425"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.5ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Brittny Gutmann"], ["username", "stevie.dooley"], ["created_at", "2021-03-05 02:19:28.571945"], ["updated_at", "2021-03-05 02:19:28.571945"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mMarketplace Load (0.1ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces"[0m
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.5ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 7]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.3ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 8]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.3ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 9]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers"[0m
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.5ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Harriet Kling"], ["username", "hyun.nicolas"], ["created_at", "2021-03-05 02:19:39.774601"], ["updated_at", "2021-03-05 02:19:39.774601"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.3ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Pres. Glayds Johnston"], ["username", "portia"], ["created_at", "2021-03-05 02:19:39.780635"], ["updated_at", "2021-03-05 02:19:39.780635"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.3ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Amelia Mann"], ["username", "kareem.nolan"], ["created_at", "2021-03-05 02:19:39.785015"], ["updated_at", "2021-03-05 02:19:39.785015"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mMarketplace Load (0.1ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces"[0m
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.5ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 10]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.5ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 11]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.3ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 12]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers"[0m
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.4ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Andy Kertzmann"], ["username", "jacki_steuber"], ["created_at", "2021-03-05 02:19:58.827296"], ["updated_at", "2021-03-05 02:19:58.827296"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.3ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Isaias Schaefer"], ["username", "sherlene.harvey"], ["created_at", "2021-03-05 02:19:58.833053"], ["updated_at", "2021-03-05 02:19:58.833053"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.3ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Zachariah Becker"], ["username", "sid"], ["created_at", "2021-03-05 02:19:58.837461"], ["updated_at", "2021-03-05 02:19:58.837461"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mMarketplace Load (0.1ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces"[0m
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.4ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 13]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.3ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 14]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.3ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 15]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers"[0m
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.4ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Fr. Tory Bode"], ["username", "tai"], ["created_at", "2021-03-05 02:23:05.980504"], ["updated_at", "2021-03-05 02:23:05.980504"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.3ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Rayna Davis JD"], ["username", "francene.boyer"], ["created_at", "2021-03-05 02:23:05.985181"], ["updated_at", "2021-03-05 02:23:05.985181"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.3ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Alease Torphy DVM"], ["username", "matt.upton"], ["created_at", "2021-03-05 02:23:05.989564"], ["updated_at", "2021-03-05 02:23:05.989564"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mMarketplace Load (0.1ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces"[0m
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.6ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 16]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.3ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 17]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.3ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 18]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  [1m[36mFreelancer Load (0.1ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers"[0m
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.9ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Alysia Collier"], ["username", "alaine"], ["created_at", "2021-03-05 02:23:40.282613"], ["updated_at", "2021-03-05 02:23:40.282613"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.3ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Marylouise Effertz"], ["username", "ali_beier"], ["created_at", "2021-03-05 02:23:40.288514"], ["updated_at", "2021-03-05 02:23:40.288514"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.3ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mitchel Stroman"], ["username", "angeles.crooks"], ["created_at", "2021-03-05 02:23:40.292812"], ["updated_at", "2021-03-05 02:23:40.292812"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mMarketplace Load (0.1ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces"[0m
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.6ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 19]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.3ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 20]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.2ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 21]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers"[0m
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.4ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Thu Koch"], ["username", "gregoria.gleichner"], ["created_at", "2021-03-05 02:23:45.239419"], ["updated_at", "2021-03-05 02:23:45.239419"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.4ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Miss Angelique Ebert"], ["username", "julietta"], ["created_at", "2021-03-05 02:23:45.245268"], ["updated_at", "2021-03-05 02:23:45.245268"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.5ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Amado Emard PhD"], ["username", "salvador.schneider"], ["created_at", "2021-03-05 02:23:45.251398"], ["updated_at", "2021-03-05 02:23:45.251398"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateClients (20210305005058)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "clients" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "username" varchar, "freelancers_id" integer, "projects_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_clients_on_freelancers_id" ON "clients" ("freelancers_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_clients_on_projects_id" ON "clients" ("projects_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210305005058"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateFreelancers (20210305005136)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "freelancers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "username" varchar, "skills" text, "clients_id" integer, "projects_id" integer, "project_bids_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_freelancers_on_clients_id" ON "freelancers" ("clients_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_freelancers_on_projects_id" ON "freelancers" ("projects_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_freelancers_on_project_bids_id" ON "freelancers" ("project_bids_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210305005136"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateMarketplaces (20210305005155)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "marketplaces" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "projects_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_marketplaces_on_projects_id" ON "marketplaces" ("projects_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210305005155"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateProjects (20210305005214)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "projects" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "skills" text, "description" text, "duration" varchar, "freelancers_id" integer, "clients_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_projects_on_freelancers_id" ON "projects" ("freelancers_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_projects_on_clients_id" ON "projects" ("clients_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210305005214"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateProjectBids (20210305005633)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "project_bids" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "price" float, "drop_date" datetime, "freelancers_id" integer, "projects_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_project_bids_on_freelancers_id" ON "project_bids" ("freelancers_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_project_bids_on_projects_id" ON "project_bids" ("projects_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210305005633"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-03-05 02:24:42.381335"], ["updated_at", "2021-03-05 02:24:42.381335"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mMarketplace Load (0.1ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces"[0m
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers"[0m
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.4ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Hollis Roob"], ["username", "estrella"], ["created_at", "2021-03-05 02:24:46.933256"], ["updated_at", "2021-03-05 02:24:46.933256"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.4ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Tanner Hoeger DO"], ["username", "alonso"], ["created_at", "2021-03-05 02:24:46.939866"], ["updated_at", "2021-03-05 02:24:46.939866"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.3ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Ms. Colleen Mraz"], ["username", "domenic.price"], ["created_at", "2021-03-05 02:24:46.944597"], ["updated_at", "2021-03-05 02:24:46.944597"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "clients"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mMarketplace Load (0.2ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces"[0m
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.5ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 1]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.3ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 2]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.3ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 3]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers"[0m
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.4ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Amb. Jung Pfannerstill"], ["username", "granville"], ["created_at", "2021-03-05 02:26:06.379852"], ["updated_at", "2021-03-05 02:26:06.379852"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.3ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Marica Bogisich"], ["username", "rasheeda"], ["created_at", "2021-03-05 02:26:06.385048"], ["updated_at", "2021-03-05 02:26:06.385048"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.4ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Soila Johns II"], ["username", "kandy_herman"], ["created_at", "2021-03-05 02:26:06.390140"], ["updated_at", "2021-03-05 02:26:06.390140"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mMarketplace Load (0.1ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces"[0m
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.7ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 4]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.3ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 5]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.3ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 6]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers"[0m
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.5ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Johnnie Willms"], ["username", "santa.lockman"], ["created_at", "2021-03-05 02:28:25.168457"], ["updated_at", "2021-03-05 02:28:25.168457"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.3ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Rev. Henry Beahan"], ["username", "shanae"], ["created_at", "2021-03-05 02:28:25.174402"], ["updated_at", "2021-03-05 02:28:25.174402"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.3ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Meggan Runte"], ["username", "theodore"], ["created_at", "2021-03-05 02:28:25.178982"], ["updated_at", "2021-03-05 02:28:25.178982"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mMarketplace Load (0.1ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces"[0m
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.4ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 7]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.3ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 8]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.4ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 9]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  [1m[36mFreelancer Load (0.1ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers"[0m
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.4ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Odis West"], ["username", "emory"], ["created_at", "2021-03-05 02:29:30.215457"], ["updated_at", "2021-03-05 02:29:30.215457"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.3ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. Renae Turner"], ["username", "tawanda"], ["created_at", "2021-03-05 02:29:30.220469"], ["updated_at", "2021-03-05 02:29:30.220469"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.3ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Quinn Kshlerin"], ["username", "leroy"], ["created_at", "2021-03-05 02:29:30.224617"], ["updated_at", "2021-03-05 02:29:30.224617"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "clients"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mMarketplace Load (0.1ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces"[0m
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.6ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 10]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.4ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 11]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.3ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 12]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers"[0m
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.7ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Numbers Haag"], ["username", "harrison"], ["created_at", "2021-03-05 02:30:20.632851"], ["updated_at", "2021-03-05 02:30:20.632851"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.4ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Jean Turner"], ["username", "aleida.wolf"], ["created_at", "2021-03-05 02:30:20.639421"], ["updated_at", "2021-03-05 02:30:20.639421"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.4ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Fidel Conroy"], ["username", "francesco"], ["created_at", "2021-03-05 02:30:20.643902"], ["updated_at", "2021-03-05 02:30:20.643902"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mMarketplace Load (0.1ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces"[0m
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.4ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 13]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.3ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 14]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.3ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 15]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers"[0m
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.4ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Stevie Christiansen Sr."], ["username", "laureen"], ["created_at", "2021-03-05 02:31:23.689821"], ["updated_at", "2021-03-05 02:31:23.689821"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.6ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Zack Lang"], ["username", "roberto.parker"], ["created_at", "2021-03-05 02:31:23.695029"], ["updated_at", "2021-03-05 02:31:23.695029"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.3ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Bret Gislason"], ["username", "sylvie.cruickshank"], ["created_at", "2021-03-05 02:31:23.699451"], ["updated_at", "2021-03-05 02:31:23.699451"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mMarketplace Load (0.1ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces"[0m
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.7ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 16]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.3ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 17]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.3ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 18]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers"[0m
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.4ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Donya McClure"], ["username", "shasta"], ["created_at", "2021-03-05 02:31:50.101813"], ["updated_at", "2021-03-05 02:31:50.101813"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.4ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Maryrose Bruen"], ["username", "dann"], ["created_at", "2021-03-05 02:31:50.107582"], ["updated_at", "2021-03-05 02:31:50.107582"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.3ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Lamont Champlin"], ["username", "felicitas_gutmann"], ["created_at", "2021-03-05 02:31:50.112054"], ["updated_at", "2021-03-05 02:31:50.112054"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mMarketplace Load (0.1ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces"[0m
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.4ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 19]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.3ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 20]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.3ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 21]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  [1m[36mFreelancer Load (0.3ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers"[0m
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.4ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Wilbert Ratke Jr."], ["username", "frances_kozey"], ["created_at", "2021-03-05 02:32:10.862591"], ["updated_at", "2021-03-05 02:32:10.862591"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.3ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Cassi Mertz II"], ["username", "norah"], ["created_at", "2021-03-05 02:32:10.868927"], ["updated_at", "2021-03-05 02:32:10.868927"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.3ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mrs. Cleo Lowe"], ["username", "hunter_kertzmann"], ["created_at", "2021-03-05 02:32:10.873704"], ["updated_at", "2021-03-05 02:32:10.873704"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mMarketplace Load (0.1ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces"[0m
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.4ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 22]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.3ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 23]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.3ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 24]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers"[0m
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.4ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Francie Padberg"], ["username", "chin.hane"], ["created_at", "2021-03-05 02:32:35.318095"], ["updated_at", "2021-03-05 02:32:35.318095"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.4ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Amb. Donnell Klein"], ["username", "annette_batz"], ["created_at", "2021-03-05 02:32:35.324038"], ["updated_at", "2021-03-05 02:32:35.324038"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.3ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Maura Goldner"], ["username", "marybeth.jacobs"], ["created_at", "2021-03-05 02:32:35.328503"], ["updated_at", "2021-03-05 02:32:35.328503"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mMarketplace Load (0.1ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces"[0m
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.4ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 25]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.3ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 26]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.3ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 27]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  [1m[36mFreelancer Load (0.1ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers"[0m
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.4ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Carlene Botsford"], ["username", "jerica.conn"], ["created_at", "2021-03-05 02:33:11.918198"], ["updated_at", "2021-03-05 02:33:11.918198"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.4ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Lamar Yundt II"], ["username", "nolan.botsford"], ["created_at", "2021-03-05 02:33:11.923611"], ["updated_at", "2021-03-05 02:33:11.923611"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.3ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Amb. Jonathon Schaefer"], ["username", "mayra.rosenbaum"], ["created_at", "2021-03-05 02:33:11.928085"], ["updated_at", "2021-03-05 02:33:11.928085"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mMarketplace Load (0.1ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces"[0m
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.4ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 28]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.4ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 29]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.3ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 30]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers"[0m
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.4ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Lacy Bauch"], ["username", "jasmin"], ["created_at", "2021-03-05 02:33:22.072288"], ["updated_at", "2021-03-05 02:33:22.072288"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.3ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Noel Windler"], ["username", "felisha"], ["created_at", "2021-03-05 02:33:22.077933"], ["updated_at", "2021-03-05 02:33:22.077933"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.3ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Nubia Beatty"], ["username", "cheryle"], ["created_at", "2021-03-05 02:33:22.082397"], ["updated_at", "2021-03-05 02:33:22.082397"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mMarketplace Load (0.1ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces"[0m
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.4ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 31]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.3ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 32]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.3ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 33]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers"[0m
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.4ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Bruno Beer"], ["username", "maurine"], ["created_at", "2021-03-05 02:35:19.359633"], ["updated_at", "2021-03-05 02:35:19.359633"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.5ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Dr. Roberto Wehner"], ["username", "masako_crist"], ["created_at", "2021-03-05 02:35:19.365430"], ["updated_at", "2021-03-05 02:35:19.365430"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.4ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Jamaal Brakus"], ["username", "martine"], ["created_at", "2021-03-05 02:35:19.381310"], ["updated_at", "2021-03-05 02:35:19.381310"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mClient Load (0.4ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."client_id" = ? /* loading for inspect */ LIMIT ?[0m  [["client_id", 36], ["LIMIT", 11]]
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."client_id" = ? /* loading for inspect */ LIMIT ?[0m  [["client_id", 36], ["LIMIT", 11]]
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateClients (20210305005058)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "clients" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "username" varchar, "freelancers_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_clients_on_freelancers_id" ON "clients" ("freelancers_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210305005058"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateFreelancers (20210305005136)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "freelancers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "username" varchar, "skills" text, "clients_id" integer, "projects_id" integer, "project_bids_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE INDEX "index_freelancers_on_clients_id" ON "freelancers" ("clients_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_freelancers_on_projects_id" ON "freelancers" ("projects_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_freelancers_on_project_bids_id" ON "freelancers" ("project_bids_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210305005136"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateMarketplaces (20210305005155)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "marketplaces" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "projects_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_marketplaces_on_projects_id" ON "marketplaces" ("projects_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210305005155"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateProjects (20210305005214)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "projects" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "skills" text, "description" text, "duration" varchar, "freelancers_id" integer, "clients_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_projects_on_freelancers_id" ON "projects" ("freelancers_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_projects_on_clients_id" ON "projects" ("clients_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210305005214"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateProjectBids (20210305005633)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "project_bids" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "price" float, "drop_date" datetime, "freelancers_id" integer, "projects_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_project_bids_on_freelancers_id" ON "project_bids" ("freelancers_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_project_bids_on_projects_id" ON "project_bids" ("projects_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210305005633"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-03-05 02:42:00.443082"], ["updated_at", "2021-03-05 02:42:00.443082"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mMarketplace Load (0.1ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces"[0m
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers"[0m
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.4ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Chang Conroy"], ["username", "ellis.doyle"], ["created_at", "2021-03-05 02:42:06.656710"], ["updated_at", "2021-03-05 02:42:06.656710"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.3ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Desiree Kerluke"], ["username", "chase.conn"], ["created_at", "2021-03-05 02:42:06.661867"], ["updated_at", "2021-03-05 02:42:06.661867"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.3ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Rudy Hessel"], ["username", "cole"], ["created_at", "2021-03-05 02:42:06.666383"], ["updated_at", "2021-03-05 02:42:06.666383"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateClients (20210305005058)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "clients" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "username" varchar, "freelancer_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_clients_on_freelancer_id" ON "clients" ("freelancer_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210305005058"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateFreelancers (20210305005136)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "freelancers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "username" varchar, "skills" text, "client_id" integer, "project_id" integer, "project_bid_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_freelancers_on_client_id" ON "freelancers" ("client_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_freelancers_on_project_id" ON "freelancers" ("project_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_freelancers_on_project_bid_id" ON "freelancers" ("project_bid_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210305005136"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateMarketplaces (20210305005155)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "marketplaces" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "project_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_marketplaces_on_project_id" ON "marketplaces" ("project_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210305005155"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateProjects (20210305005214)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "projects" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "skills" text, "description" text, "duration" varchar, "freelancer_id" integer, "client_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_projects_on_freelancer_id" ON "projects" ("freelancer_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_projects_on_client_id" ON "projects" ("client_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210305005214"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateProjectBids (20210305005633)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "project_bids" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "price" float, "drop_date" datetime, "freelancer_id" integer, "project_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_project_bids_on_freelancer_id" ON "project_bids" ("freelancer_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_project_bids_on_project_id" ON "project_bids" ("project_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210305005633"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-03-05 02:45:23.447791"], ["updated_at", "2021-03-05 02:45:23.447791"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mMarketplace Load (0.1ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces"[0m
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  [1m[36mFreelancer Load (0.3ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers"[0m
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.5ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Jay Hagenes"], ["username", "emerson.weimann"], ["created_at", "2021-03-05 02:45:28.523781"], ["updated_at", "2021-03-05 02:45:28.523781"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.4ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Neoma Sauer"], ["username", "karoline_wintheiser"], ["created_at", "2021-03-05 02:45:28.530828"], ["updated_at", "2021-03-05 02:45:28.530828"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.3ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Vallie McDermott"], ["username", "francisco"], ["created_at", "2021-03-05 02:45:28.535594"], ["updated_at", "2021-03-05 02:45:28.535594"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateClients (20210305005058)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "clients" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "username" varchar, "marketplace_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_clients_on_marketplace_id" ON "clients" ("marketplace_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210305005058"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateFreelancers (20210305005136)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "freelancers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "username" varchar, "skills" text, "marketplace_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_freelancers_on_marketplace_id" ON "freelancers" ("marketplace_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210305005136"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateMarketplaces (20210305005155)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "marketplaces" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210305005155"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateProjects (20210305005214)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "projects" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "skills" text, "description" text, "duration" varchar, "client_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_projects_on_client_id" ON "projects" ("client_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210305005214"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateProjectBids (20210305005633)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "project_bids" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "price" float, "drop_date" datetime, "freelancer_id" integer, "project_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_project_bids_on_freelancer_id" ON "project_bids" ("freelancer_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_project_bids_on_project_id" ON "project_bids" ("project_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210305005633"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateContracts (20210305024935)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "contracts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "client_id" integer, "freelancer_id" integer, "project_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_contracts_on_client_id" ON "contracts" ("client_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_contracts_on_freelancer_id" ON "contracts" ("freelancer_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_contracts_on_project_id" ON "contracts" ("project_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210305024935"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-03-05 04:18:59.274958"], ["updated_at", "2021-03-05 04:18:59.274958"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mMarketplace Load (0.1ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces"[0m
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  [1m[36mFreelancer Load (0.1ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers"[0m
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids"[0m
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mMarketplace Load (0.1ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces"[0m
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers"[0m
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids"[0m
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mMarketplace Load (0.1ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces"[0m
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers"[0m
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids"[0m
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mMarketplace Load (0.3ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces" ORDER BY "marketplaces"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMarketplace Load (0.2ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces" ORDER BY "marketplaces"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMarketplace Create (0.9ms)[0m  [1m[32mINSERT INTO "marketplaces" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2021-03-05 04:23:34.835098"], ["updated_at", "2021-03-05 04:23:34.835098"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mMarketplace Load (0.7ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMarketplace Destroy (0.4ms)[0m  [1m[31mDELETE FROM "marketplaces" WHERE "marketplaces"."id" = ?[0m  [["id", 1]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mClient Load (0.7ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  [1m[36mFreelancer Load (0.8ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers"[0m
+  [1m[36mProjectBid Load (0.8ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMarketplace Create (0.9ms)[0m  [1m[32mINSERT INTO "marketplaces" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2021-03-05 12:41:11.627203"], ["updated_at", "2021-03-05 12:41:11.627203"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mMarketplace Load (0.5ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMarketplace Destroy (0.4ms)[0m  [1m[31mDELETE FROM "marketplaces" WHERE "marketplaces"."id" = ?[0m  [["id", 2]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mClient Load (0.6ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  [1m[36mFreelancer Load (0.4ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers"[0m
+  [1m[36mProjectBid Load (0.5ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMarketplace Create (0.7ms)[0m  [1m[32mINSERT INTO "marketplaces" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2021-03-05 12:43:06.637833"], ["updated_at", "2021-03-05 12:43:06.637833"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mMarketplace Load (0.2ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces" ORDER BY "marketplaces"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (1.0ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "marketplace_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Alycia Zemlak"], ["username", "mai"], ["marketplace_id", 3], ["created_at", "2021-03-05 12:43:06.845889"], ["updated_at", "2021-03-05 12:43:06.845889"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mMarketplace Load (0.1ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces" ORDER BY "marketplaces"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.5ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "marketplace_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Alva Jakubowski"], ["username", "jewell_mante"], ["marketplace_id", 3], ["created_at", "2021-03-05 12:43:06.852473"], ["updated_at", "2021-03-05 12:43:06.852473"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mMarketplace Load (0.1ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces" ORDER BY "marketplaces"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.4ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "marketplace_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Prof. Elmo West"], ["username", "dominick_beer"], ["marketplace_id", 3], ["created_at", "2021-03-05 12:43:06.858202"], ["updated_at", "2021-03-05 12:43:06.858202"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProject Create (1.0ms)[0m  [1m[32mINSERT INTO "projects" ("title", "skills", "description", "duration", "client_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Advertising, social media, branding , marketing expert"], ["skills", "Self-motivated,Problem solving,Teamwork,Leadership,Work under pressure"], ["description", "Itaque quis ut. Qui quia assumenda. Praesentium recusandae perferendis."], ["duration", "3 month/s"], ["client_id", 3], ["created_at", "2021-03-05 12:43:06.880786"], ["updated_at", "2021-03-05 12:43:06.880786"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mMarketplace Load (0.5ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMarketplace Destroy (0.4ms)[0m  [1m[31mDELETE FROM "marketplaces" WHERE "marketplaces"."id" = ?[0m  [["id", 3]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mClient Load (0.4ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.8ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 1]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.3ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 2]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.4ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 3]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProject Destroy (0.7ms)[0m  [1m[31mDELETE FROM "projects" WHERE "projects"."id" = ?[0m  [["id", 1]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mFreelancer Load (0.7ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers"[0m
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMarketplace Create (0.9ms)[0m  [1m[32mINSERT INTO "marketplaces" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2021-03-05 12:43:18.352929"], ["updated_at", "2021-03-05 12:43:18.352929"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mMarketplace Load (0.2ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces" ORDER BY "marketplaces"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.3ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "marketplace_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Arron Thiel"], ["username", "janett"], ["marketplace_id", 4], ["created_at", "2021-03-05 12:43:18.559883"], ["updated_at", "2021-03-05 12:43:18.559883"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mMarketplace Load (0.1ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces" ORDER BY "marketplaces"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.3ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "marketplace_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Mr. Edwin Lebsack"], ["username", "reginald"], ["marketplace_id", 4], ["created_at", "2021-03-05 12:43:18.567006"], ["updated_at", "2021-03-05 12:43:18.567006"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mMarketplace Load (0.2ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces" ORDER BY "marketplaces"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Create (0.3ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "marketplace_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Geoffrey Schaefer"], ["username", "marcos"], ["marketplace_id", 4], ["created_at", "2021-03-05 12:43:18.572938"], ["updated_at", "2021-03-05 12:43:18.572938"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProject Create (0.5ms)[0m  [1m[32mINSERT INTO "projects" ("title", "skills", "description", "duration", "client_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Backend Expert - Serverless, Parse, Node, Python, AWS Knowledge and Kubernetes"], ["skills", "Problem solving,Confidence,Problem solving,Problem solving,Technical savvy"], ["description", "Voluptates qui laboriosam. Nobis ipsa nulla. Quia consequatur debitis."], ["duration", "6 month/s"], ["client_id", 5], ["created_at", "2021-03-05 12:43:18.580142"], ["updated_at", "2021-03-05 12:43:18.580142"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProject Create (0.3ms)[0m  [1m[32mINSERT INTO "projects" ("title", "skills", "description", "duration", "client_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Lead operational process optimization to enable company to scale."], ["skills", "Self-motivated,Problem solving,Technical savvy,Fast learner,Organisation"], ["description", "Sint explicabo dolores. Labore ut hic. Atque nesciunt molestiae."], ["duration", "5 day/s"], ["client_id", 4], ["created_at", "2021-03-05 12:43:18.587753"], ["updated_at", "2021-03-05 12:43:18.587753"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProject Create (0.4ms)[0m  [1m[32mINSERT INTO "projects" ("title", "skills", "description", "duration", "client_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Python Developer required for developing very small api"], ["skills", "Technical savvy,Leadership,Fast learner,Communication,Leadership"], ["description", "Sed iste ducimus. Nobis omnis molestiae. Repudiandae et qui."], ["duration", "6 day/s"], ["client_id", 5], ["created_at", "2021-03-05 12:43:18.594355"], ["updated_at", "2021-03-05 12:43:18.594355"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProject Create (0.3ms)[0m  [1m[32mINSERT INTO "projects" ("title", "skills", "description", "duration", "client_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Python Developer required for developing very small api"], ["skills", "Self-motivated,Communication,Proactive,Self-motivated,Communication"], ["description", "Perferendis quod voluptatem. Accusantium doloremque aperiam. Culpa quis explicabo."], ["duration", "5 month/s"], ["client_id", 4], ["created_at", "2021-03-05 12:43:18.601057"], ["updated_at", "2021-03-05 12:43:18.601057"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProject Create (0.3ms)[0m  [1m[32mINSERT INTO "projects" ("title", "skills", "description", "duration", "client_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Backend Expert - Serverless, Parse, Node, Python, AWS Knowledge and Kubernetes"], ["skills", "Self-motivated,Self-motivated,Networking skills,Problem solving,Technical savvy"], ["description", "Nemo atque est. Voluptatum asperiores voluptas. Et sed doloremque."], ["duration", "2 month/s"], ["client_id", 4], ["created_at", "2021-03-05 12:43:18.607524"], ["updated_at", "2021-03-05 12:43:18.607524"]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProject Create (0.3ms)[0m  [1m[32mINSERT INTO "projects" ("title", "skills", "description", "duration", "client_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Need someone to create a very simple Purchasing process manual and/or flowchart"], ["skills", "Networking skills,Networking skills,Proactive,Teamwork,Communication"], ["description", "Modi neque perferendis. Quasi possimus autem. Ut dolorem amet."], ["duration", "1 day/s"], ["client_id", 6], ["created_at", "2021-03-05 12:43:18.615892"], ["updated_at", "2021-03-05 12:43:18.615892"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProject Create (0.3ms)[0m  [1m[32mINSERT INTO "projects" ("title", "skills", "description", "duration", "client_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Python Developer required for developing very small api"], ["skills", "Confidence,Organisation,Proactive,Work under pressure,Networking skills"], ["description", "Totam rerum ipsa. Voluptatibus voluptatem qui. Est aut dolor."], ["duration", "2 day/s"], ["client_id", 6], ["created_at", "2021-03-05 12:43:18.622345"], ["updated_at", "2021-03-05 12:43:18.622345"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProject Create (0.3ms)[0m  [1m[32mINSERT INTO "projects" ("title", "skills", "description", "duration", "client_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Need someone who have a full option already made LMS system for sale."], ["skills", "Fast learner,Confidence,Leadership,Leadership,Work under pressure"], ["description", "Veniam dolor saepe. Consequuntur vero quam. Id eos alias."], ["duration", "6 month/s"], ["client_id", 4], ["created_at", "2021-03-05 12:43:18.628825"], ["updated_at", "2021-03-05 12:43:18.628825"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProject Create (0.3ms)[0m  [1m[32mINSERT INTO "projects" ("title", "skills", "description", "duration", "client_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Python Developer required for developing very small api"], ["skills", "Teamwork,Work under pressure,Proactive,Leadership,Fast learner"], ["description", "Aperiam est exercitationem. Est quis in. Est sunt saepe."], ["duration", "1 month/s"], ["client_id", 6], ["created_at", "2021-03-05 12:43:18.635708"], ["updated_at", "2021-03-05 12:43:18.635708"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProject Create (0.5ms)[0m  [1m[32mINSERT INTO "projects" ("title", "skills", "description", "duration", "client_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Facebook Advertising campaign manager needed"], ["skills", "Fast learner,Fast learner,Networking skills,Communication,Leadership"], ["description", "Voluptatem et voluptatem. Sunt aut blanditiis. Incidunt rerum molestiae."], ["duration", "3 day/s"], ["client_id", 5], ["created_at", "2021-03-05 12:43:18.642764"], ["updated_at", "2021-03-05 12:43:18.642764"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "clients"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "marketplaces"[0m
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" ORDER BY "projects"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]

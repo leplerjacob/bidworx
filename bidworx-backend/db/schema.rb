@@ -10,49 +10,52 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_05_005633) do
+ActiveRecord::Schema.define(version: 2021_03_05_024935) do
 
   create_table "clients", force: :cascade do |t|
     t.string "name"
     t.string "username"
-    t.integer "freelancers_id"
-    t.integer "projects_id"
+    t.integer "marketplace_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["freelancers_id"], name: "index_clients_on_freelancers_id"
-    t.index ["projects_id"], name: "index_clients_on_projects_id"
+    t.index ["marketplace_id"], name: "index_clients_on_marketplace_id"
+  end
+
+  create_table "contracts", force: :cascade do |t|
+    t.integer "client_id"
+    t.integer "freelancer_id"
+    t.integer "project_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["client_id"], name: "index_contracts_on_client_id"
+    t.index ["freelancer_id"], name: "index_contracts_on_freelancer_id"
+    t.index ["project_id"], name: "index_contracts_on_project_id"
   end
 
   create_table "freelancers", force: :cascade do |t|
     t.string "name"
     t.string "username"
     t.text "skills"
-    t.integer "clients_id"
-    t.integer "projects_id"
-    t.integer "project_bids_id"
+    t.integer "marketplace_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["clients_id"], name: "index_freelancers_on_clients_id"
-    t.index ["project_bids_id"], name: "index_freelancers_on_project_bids_id"
-    t.index ["projects_id"], name: "index_freelancers_on_projects_id"
+    t.index ["marketplace_id"], name: "index_freelancers_on_marketplace_id"
   end
 
   create_table "marketplaces", force: :cascade do |t|
-    t.integer "projects_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["projects_id"], name: "index_marketplaces_on_projects_id"
   end
 
   create_table "project_bids", force: :cascade do |t|
     t.float "price"
     t.datetime "drop_date"
-    t.integer "freelancers_id"
-    t.integer "projects_id"
+    t.integer "freelancer_id"
+    t.integer "project_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["freelancers_id"], name: "index_project_bids_on_freelancers_id"
-    t.index ["projects_id"], name: "index_project_bids_on_projects_id"
+    t.index ["freelancer_id"], name: "index_project_bids_on_freelancer_id"
+    t.index ["project_id"], name: "index_project_bids_on_project_id"
   end
 
   create_table "projects", force: :cascade do |t|
@@ -60,12 +63,10 @@ ActiveRecord::Schema.define(version: 2021_03_05_005633) do
     t.text "skills"
     t.text "description"
     t.string "duration"
-    t.integer "freelancers_id"
-    t.integer "clients_id"
+    t.integer "client_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["clients_id"], name: "index_projects_on_clients_id"
-    t.index ["freelancers_id"], name: "index_projects_on_freelancers_id"
+    t.index ["client_id"], name: "index_projects_on_client_id"
   end
 
 end

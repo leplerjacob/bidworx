@@ -1,6 +1,7 @@
 class Freelancer < ApplicationRecord
-    has_many :projects
-    has_many :clients, through: :projects
+    has_many :contracts
     has_many :project_bids
+    belongs_to :marketplace
+    has_many :clients, through: :contracts
     
 end

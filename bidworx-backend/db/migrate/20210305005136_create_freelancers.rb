@@ -5,9 +5,7 @@ class CreateFreelancers < ActiveRecord::Migration[6.1]
       t.string :username
       t.text :skills
 
-      t.references :clients
-      t.references :projects
-      t.references :project_bids
+      t.references :marketplace
 
       t.timestamps
     end

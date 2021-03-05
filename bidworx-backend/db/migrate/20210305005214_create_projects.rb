@@ -7,8 +7,7 @@ class CreateProjects < ActiveRecord::Migration[6.1]
       t.text :description
       t.string :duration
 
-      t.references :freelancers
-      t.references :clients
+      t.references :client
 
       t.timestamps
     end

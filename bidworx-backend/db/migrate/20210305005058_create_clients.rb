@@ -4,8 +4,7 @@ class CreateClients < ActiveRecord::Migration[6.1]
       t.string :name
       t.string :username
 
-      t.references :freelancers
-      t.references :projects
+      t.references :marketplace
       
       t.timestamps
     end

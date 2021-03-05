@@ -1,4 +1,4 @@
 class Project < ApplicationRecord
     belongs_to :client
-    belongs_to :freelancer
+    has_many :project_bids
 end
