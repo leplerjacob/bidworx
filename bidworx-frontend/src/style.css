@@ -1,126 +1,231 @@
+/* Stretch goals to separate file delivery with webpacker */
+
 /* RESETS */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+li {
+  list-style: none;
 }
 
 /* ROOT CSS VARIABLES */
-:root {
-    /* Color Theme */
-}
+/* :root { */
+/* Color Theme */
+/* } */
 
 /* BASE STYLES START */
 /* Body HTML will change dynamicall */
 body {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
-/* sections 
+/****** SECTIONS *******
 NOTE: will change when user enters dashboard
- */
+*/
+
 section {
-    height: 100%;
-    width: 100%;
+  /* NOTE: Styling shared by both login/signup and dashboard section */
+  height: 100%;
+  width: 100%;
 }
 /* BASE STYLES END */
 
-/* DASHBOARD SECTION START */
-section.dashboard {
-    display: grid;
-    grid-template-columns: 200px auto;
-    grid-template-rows: 1fr;
-    height: 100vh;
-    width: 100%;
+/* NOTIFICATION START */
+.notify {
+  z-index: 1;
+  width: 60vw;
+  padding: 10px 30px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  text-align: center;
 }
 
+.success span{
+  color: green;
+}
+
+.failure span{
+  color: red
+}
+/* NOTIFICATION END */
+
+/* DASHBOARD SECTION START */
+section.dashboard {
+  display: grid;
+  grid-template-columns: 250px auto;
+  grid-template-rows: 1fr;
+  height: 100vh;
+  width: 100%;
+}
+
+section.dashboard .sidebar {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px auto;
+}
+
+/* section.dashboard .sidebar .logo {
+}
+
+section.dashboard .sidebar .client {
+
+} */
+
+/* section.dashboard .sidebar .client {
+
+} */
 
 /* DASHBOARD SECTION END */
 
 /* SIGNUP LOGIN SECTION START */
 section.login-signup {
-    display: grid;
-    grid-template-columns: 10% 1fr 10%;
-    grid-template-rows: 1fr;
-    height: 100vh;
-    width: 100%;
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  grid-template-rows: 1fr;
+  height: 100vh;
+  width: 100%;
 }
 section.login-signup .container {
-    display: flex;
+  display: flex;
 }
 section.login-signup .container .card {
-    margin: auto;
-    padding: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    height: 60%;
-    width: 100%;
-    max-width: 70%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  height: auto;
+  width: 100%;
+  max-width: 800px;
+  min-width: 500px;
 }
+
+/* SIGNUP FORM ONLY START */
+section.login-signup .container .inner-card {
+  /* display: block; */
+  margin: auto;
+  max-width: 500px;
+  min-width: 300px;
+  background: lightblue;
+}
+
+section.login-signup .container .inner-card .signup-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50% 1fr;
+}
+/* SIGNUP FORM ONLY END */
+
 /* LOGIN SIDE START */
 section.login-signup .container .card .login {
-    margin: 0;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 1fr 1fr;
-    height: 100%;
-    width: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 1fr;
+  height: 100%;
+  width: 100%;
 }
 /* LOGIN UPPER START */
-section.login-signup .container .login .login-upper{
-    display: flex;
-    padding: 20% 0;
-    flex-direction: column;
-    text-align: center;
-    width: 100%;
+section.login-signup .container .login .login-upper {
+  display: flex;
+  padding: 20% 0;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
 }
 /* LOGIN UPPER END */
 
 /* LOGIN LOWER START */
 section.login-signup .container .login .login-lower {
-    padding: 0 15px;
+  padding: 0 15px;
 }
 section.login-signup .container .login .login-lower .form {
-    height: 100%;
+  height: 100%;
 }
 section.login-signup .container .login .login-lower form {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    align-content: space-between;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-content: space-between;
 }
 
 /* Username Label */
-section.login-signup .container .login .login-lower form label[for=username] {
-    display: block;
-    text-align: center;
+section.login-signup .container .login .login-lower form label[for="username"] {
+  display: block;
+  text-align: center;
 }
 section.login-signup .container .login .login-lower form input.username {
-    line-height: 2rem;
-    font-size: 1.25rem;
-    text-align: center;
-    width: 100%;
+  line-height: 2rem;
+  font-size: 1.25rem;
+  text-align: center;
+  width: 100%;
 }
-section.login-signup .container .login .login-lower form input[type=submit] {
-    display: block;
-    margin: auto;
-    font-size: 1rem;
-    padding: 5px;
-    border: none;
-    border-radius: 8px;
+section.login-signup .container .login .login-lower form input[type="submit"] {
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1rem;
+  padding: 10px 35px;
+  border: none;
+  border-radius: 8px;
 }
 /* LOGIN LOWER END */
 /** LOGIN SIDE END **/
 
 /* SIGNUP SIDE START */
 section.login-signup .container .signup {
-    margin: 0;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 50px 30px 25px 1fr;
-    height: 100%;
-    width: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% 10% 22% 8% 1fr;
+  height: 100%;
+  width: 100%;
+}
+
+section.login-signup .container .signup .motto {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section.login-signup .container .signup .motto h2 {
+  text-align: center;
+}
+
+section.login-signup .container .signup .services {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+section.login-signup .container .signup .sign {
+  text-align: center;
+}
+
+section.login-signup .container .signup .register {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+section.login-signup .container .signup .register a {
+  margin: auto;
+  background: rgb(226, 226, 226);
+  border-radius: 8px;
+  padding: 10px 15px;
 }
 
 /* LOGIN SIGNUP SECTION END */
