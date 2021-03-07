@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/leplerjacob/bidworx/issues"
   },
-  "homepage": "https://github.com/leplerjacob/bidworx#readme"
+  "homepage": "https://github.com/leplerjacob/bidworx#readme",
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  },
+  "dependencies": {
+    "concurrently": "^6.0.0"
+  }
 }

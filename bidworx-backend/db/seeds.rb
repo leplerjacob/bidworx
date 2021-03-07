@@ -22,6 +22,9 @@ job_descriptions = [
 
 Marketplace.create;
 
+jacob = Client.create(name: "Jacob", username: "jlepler")
+Marketplace.first.clients << jacob
+
 3.times do
     client = Client.create(name: Faker::Name.unique.name, username: Faker::Internet.username)
     Marketplace.first.clients << client

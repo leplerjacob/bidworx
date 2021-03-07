@@ -1,23 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>BidWorX</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" />
     <link rel="stylesheet" href="src/style.css" />
-    <title>BidWorX</title>
+    <script type="module" src="./src/index.js"></script>
   </head>
   <body>
-    <!-- <section class="dashboard">
-
-        <div class="sidebar">
-
+    <section class="dashboard">
+      <div class="sidebar">
+        <!-- Separate sidebar for client and freelancer -->
+        <!-- Client Sidebar -->
+        <div class="logo">BRAND LOGO</div>
+        <div class="client">
+          <div class="navigation">
+            <div class="button">
+              <a href="#">Contracts</a>
+            </div>
+            <div class="button">
+              <a href="#">Make A Project</a>
+            </div>
+            <div class="button">
+              <a href="#">View Projects</a>
+            </div>
+            <div class="button">
+              <a href="#">View Bids</a>
+            </div>
+          </div>
         </div>
-        <div class="content container">
+        <!-- Freelancer Sidebar -->
+        <!-- <div class="freelancer">
+            
+          </div> -->
+      </div>
+      <div class="content container">
+        <div class="client"></div>
+        <!-- <div class="freelancer">
 
-        </div>
-
-    </section> -->
+          </div> -->
+      </div>
+    </section>
 
     <section class="login-signup">
       <div></div>
@@ -36,27 +61,40 @@
               </div>
             </div>
             <div class="login-lower">
-                <div class="form">
-                  <form action="#">
-                    <label for="username">Username</label>
-                    <input type="text" class="username"/>
-                    <input type="submit">
-                  </form>
-                </div>
+              <div class="form">
+                <form action="#">
+                  <label for="username">Username</label>
+                  <input type="text" class="username" />
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
             </div>
           </div>
           <div class="signup">
-              <div>Some Amazing Text About Our Company</div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
+            <div></div>
+            <div class="motto">
+              <h2>Where talent meets task</h2>
+            </div>
+            <div class="services">
+              <ul>
+                <li>Engage our marketplace</li>
+                <li>Manage your projects</li>
+                <li>Benefit from our vetted talent pool</li>
+              </ul>
+            </div>
+            <div class="sign">
+              <span>Sign Up</span>
+            </div>
+            <div class="register">
+              <a href="#" class="signup-button">
+                <span>Sign Up</span>
+              </a>
+            </div>
+            <div>...</div>
           </div>
         </div>
       </div>
       <div></div>
     </section>
-
-    <script defer src="./src/index.js"></script>
   </body>
 </html>
