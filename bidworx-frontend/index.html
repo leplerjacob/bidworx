@@ -10,6 +10,7 @@
     <script type="module" src="./src/index.js"></script>
   </head>
   <body>
+
     <section class="dashboard">
       <div class="sidebar">
         <!-- Separate sidebar for client and freelancer -->
@@ -46,6 +47,7 @@
 
     <section class="login-signup">
       <div></div>
+
       <div class="login-signup container">
         <div class="card">
           <div class="login">
@@ -62,10 +64,10 @@
             </div>
             <div class="login-lower">
               <div class="form">
-                <form action="#">
+                <form action="#" class="login-user">
                   <label for="username">Username</label>
-                  <input type="text" class="username" />
-                  <input type="submit" value="Submit">
+                  <input type="text" name="username" class="username" />
+                  <button type="submit">Login</button>
                 </form>
               </div>
             </div>
@@ -86,15 +88,17 @@
               <span>Sign Up</span>
             </div>
             <div class="register">
-              <a href="#" class="signup-button">
+              <button class="signup-button">
                 <span>Sign Up</span>
-              </a>
+              </button>
             </div>
             <div>...</div>
           </div>
         </div>
       </div>
+
       <div></div>
+      
     </section>
   </body>
 </html>

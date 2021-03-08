@@ -14,7 +14,12 @@ a {
 li {
   list-style: none;
 }
-
+button {
+  border: none;
+  background: none;
+  font-family: 'Times New Roman', Times, serif;
+  cursor: pointer;
+}
 /* ROOT CSS VARIABLES */
 /* :root { */
 /* Color Theme */
@@ -170,12 +175,13 @@ section.login-signup .container .login .login-lower form input.username {
   text-align: center;
   width: 100%;
 }
-section.login-signup .container .login .login-lower form input[type="submit"] {
+section.login-signup .container .login .login-lower form button {
   cursor: pointer;
   display: block;
   margin: auto;
   font-family: "Times New Roman", Times, serif;
   font-size: 1rem;
+  background: rgb(226, 226, 226);
   padding: 10px 35px;
   border: none;
   border-radius: 8px;
@@ -221,8 +227,9 @@ section.login-signup .container .signup .register {
   align-content: center;
 }
 
-section.login-signup .container .signup .register a {
+section.login-signup .container .signup .register button {
   margin: auto;
+  font-size: 1rem;
   background: rgb(226, 226, 226);
   border-radius: 8px;
   padding: 10px 15px;

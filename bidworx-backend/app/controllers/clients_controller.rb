@@ -19,9 +19,11 @@ class ClientsController < ApplicationController
         end
     end
 
+
     private
         def client_params
             params.require(:client).permit(:name, :username);
         end
+
 end
 # params.require(:artist).permit(:name)

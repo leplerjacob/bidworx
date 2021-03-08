@@ -1,6 +1,5 @@
 export default function Notification({ type, message }) {
   const msgElementArray = [];
-  console.log(type, typeof type);
   if (type != "success") {
     const msgs = message[0];
     for (const key of Object.keys(msgs)) {
@@ -13,7 +12,7 @@ export default function Notification({ type, message }) {
     const loginSide = document.querySelector(".login");
     const signupSide = document.querySelector(".signup");
     const signupForm = document.querySelector(".signup-form");
-    signupForm.style.display = "none";
+    signupForm.remove()
     loginSide.style.display = "grid";
     signupSide.style.display = "grid";
     card.className = "card";

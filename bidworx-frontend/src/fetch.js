@@ -15,3 +15,9 @@ export async function postNewUser(newUser) {
     const data = await response.json()
     return data
 }
+
+export async function logInUser(username){
+    const response = await fetch(`http://localhost:3000/login/${username}`)
+    const data = await response.json()
+    return data
+}

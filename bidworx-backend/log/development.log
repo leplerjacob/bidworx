@@ -4329,3 +4329,1091 @@ Processing by ClientsController#create as */*
 Completed 200 OK in 19ms (Views: 0.4ms | ActiveRecord: 3.8ms | Allocations: 5885)
 
 
+Started POST "/clients" for 127.0.0.1 at 2021-03-07 17:57:57 -0500
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ClientsController#create as */*
+  Parameters: {"client"=>{"name"=>"", "username"=>""}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", ""], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mMarketplace Load (0.1ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces" ORDER BY "marketplaces"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", ""], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", ""], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:11:in `create'
+Completed 200 OK in 254ms (Views: 0.3ms | ActiveRecord: 2.3ms | Allocations: 230792)
+
+
+Started POST "/clients" for 127.0.0.1 at 2021-03-07 18:06:28 -0500
+Processing by ClientsController#create as */*
+  Parameters: {"client"=>{"name"=>"", "username"=>""}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mClient Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", ""], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mMarketplace Load (0.2ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces" ORDER BY "marketplaces"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", ""], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", ""], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:11:in `create'
+Completed 200 OK in 25ms (Views: 0.4ms | ActiveRecord: 2.0ms | Allocations: 6271)
+
+
+Started POST "/clients" for 127.0.0.1 at 2021-03-07 18:07:48 -0500
+Processing by ClientsController#create as */*
+  Parameters: {"client"=>{"name"=>"", "username"=>""}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", ""], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mMarketplace Load (0.2ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces" ORDER BY "marketplaces"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", ""], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", ""], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:11:in `create'
+Completed 200 OK in 15ms (Views: 0.3ms | ActiveRecord: 1.3ms | Allocations: 5670)
+
+
+Started POST "/clients" for 127.0.0.1 at 2021-03-07 18:08:17 -0500
+Processing by ClientsController#create as */*
+  Parameters: {"client"=>{"name"=>"", "username"=>""}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mClient Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", ""], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mMarketplace Load (0.1ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces" ORDER BY "marketplaces"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", ""], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", ""], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:11:in `create'
+Completed 200 OK in 16ms (Views: 0.2ms | ActiveRecord: 1.1ms | Allocations: 5670)
+
+
+Started POST "/clients" for 127.0.0.1 at 2021-03-07 18:08:32 -0500
+Processing by ClientsController#create as */*
+  Parameters: {"client"=>{"name"=>"", "username"=>""}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", ""], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mMarketplace Load (0.2ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces" ORDER BY "marketplaces"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", ""], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", ""], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:11:in `create'
+Completed 200 OK in 15ms (Views: 0.2ms | ActiveRecord: 1.2ms | Allocations: 5645)
+
+
+Started POST "/clients" for 127.0.0.1 at 2021-03-07 18:09:57 -0500
+Processing by ClientsController#create as */*
+  Parameters: {"client"=>{"name"=>"aswec", "username"=>"wcdc"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "wcdc"], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mMarketplace Load (0.2ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces" ORDER BY "marketplaces"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "wcdc"], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Create (0.7ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "marketplace_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "aswec"], ["username", "wcdc"], ["marketplace_id", 9], ["created_at", "2021-03-07 23:09:57.119537"], ["updated_at", "2021-03-07 23:09:57.119537"]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? AND "clients"."id" != ? LIMIT ?[0m  [["username", "wcdc"], ["id", 38], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:11:in `create'
+Completed 200 OK in 18ms (Views: 0.2ms | ActiveRecord: 3.0ms | Allocations: 6066)
+
+
+Started POST "/clients" for 127.0.0.1 at 2021-03-07 18:13:59 -0500
+Processing by ClientsController#create as */*
+  Parameters: {"client"=>{"name"=>"", "username"=>""}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mClient Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", ""], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mMarketplace Load (0.2ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces" ORDER BY "marketplaces"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", ""], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", ""], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:11:in `create'
+Completed 200 OK in 13ms (Views: 0.3ms | ActiveRecord: 1.1ms | Allocations: 5645)
+
+
+Started POST "/clients" for 127.0.0.1 at 2021-03-07 18:31:16 -0500
+Processing by ClientsController#create as */*
+  Parameters: {"client"=>{"name"=>"ADS", "username"=>"ads"}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "ads"], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mMarketplace Load (0.2ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces" ORDER BY "marketplaces"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "ads"], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Create (1.5ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "marketplace_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "ADS"], ["username", "ads"], ["marketplace_id", 9], ["created_at", "2021-03-07 23:31:16.862915"], ["updated_at", "2021-03-07 23:31:16.862915"]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? AND "clients"."id" != ? LIMIT ?[0m  [["username", "ads"], ["id", 39], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:11:in `create'
+Completed 200 OK in 17ms (Views: 0.2ms | ActiveRecord: 3.9ms | Allocations: 6332)
+
+
+Started POST "/clients" for 127.0.0.1 at 2021-03-07 18:32:20 -0500
+Processing by ClientsController#create as */*
+  Parameters: {"client"=>{"name"=>"gerve", "username"=>"evev"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mClient Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "evev"], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mMarketplace Load (0.2ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces" ORDER BY "marketplaces"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "evev"], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Create (0.4ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "marketplace_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "gerve"], ["username", "evev"], ["marketplace_id", 9], ["created_at", "2021-03-07 23:32:20.403009"], ["updated_at", "2021-03-07 23:32:20.403009"]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? AND "clients"."id" != ? LIMIT ?[0m  [["username", "evev"], ["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:11:in `create'
+Completed 200 OK in 16ms (Views: 0.3ms | ActiveRecord: 2.7ms | Allocations: 5861)
+
+
+Started POST "/clients" for 127.0.0.1 at 2021-03-07 18:34:48 -0500
+Processing by ClientsController#create as */*
+  Parameters: {"client"=>{"name"=>"asdscqw", "username"=>"sdfsdfs"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mClient Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "sdfsdfs"], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mMarketplace Load (0.2ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces" ORDER BY "marketplaces"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "sdfsdfs"], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Create (0.4ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "marketplace_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "asdscqw"], ["username", "sdfsdfs"], ["marketplace_id", 9], ["created_at", "2021-03-07 23:34:48.839216"], ["updated_at", "2021-03-07 23:34:48.839216"]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? AND "clients"."id" != ? LIMIT ?[0m  [["username", "sdfsdfs"], ["id", 41], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:11:in `create'
+Completed 200 OK in 18ms (Views: 0.3ms | ActiveRecord: 3.2ms | Allocations: 5862)
+
+
+Started POST "/clients" for 127.0.0.1 at 2021-03-07 18:35:53 -0500
+Processing by ClientsController#create as */*
+  Parameters: {"client"=>{"name"=>"asdasd", "username"=>"sdfsdf"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mClient Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "sdfsdf"], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mMarketplace Load (0.2ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces" ORDER BY "marketplaces"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "sdfsdf"], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Create (0.4ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "marketplace_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "asdasd"], ["username", "sdfsdf"], ["marketplace_id", 9], ["created_at", "2021-03-07 23:35:53.792307"], ["updated_at", "2021-03-07 23:35:53.792307"]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? AND "clients"."id" != ? LIMIT ?[0m  [["username", "sdfsdf"], ["id", 42], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:11:in `create'
+Completed 200 OK in 16ms (Views: 0.3ms | ActiveRecord: 3.1ms | Allocations: 5861)
+
+
+Started POST "/clients" for 127.0.0.1 at 2021-03-07 18:37:03 -0500
+Processing by ClientsController#create as */*
+  Parameters: {"client"=>{"name"=>"asdwdc", "username"=>"cwdcw"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "cwdcw"], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mMarketplace Load (0.1ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces" ORDER BY "marketplaces"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "cwdcw"], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Create (0.5ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "marketplace_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "asdwdc"], ["username", "cwdcw"], ["marketplace_id", 9], ["created_at", "2021-03-07 23:37:03.679193"], ["updated_at", "2021-03-07 23:37:03.679193"]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? AND "clients"."id" != ? LIMIT ?[0m  [["username", "cwdcw"], ["id", 43], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:11:in `create'
+Completed 200 OK in 16ms (Views: 0.2ms | ActiveRecord: 2.6ms | Allocations: 5862)
+
+
+Started POST "/clients" for 127.0.0.1 at 2021-03-07 18:39:54 -0500
+Processing by ClientsController#create as */*
+  Parameters: {"client"=>{"name"=>"sdfsdfsd", "username"=>"sdfsdf"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "sdfsdf"], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mMarketplace Load (0.1ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces" ORDER BY "marketplaces"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "sdfsdf"], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "sdfsdf"], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:11:in `create'
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 0.9ms | Allocations: 5728)
+
+
+Started POST "/clients" for 127.0.0.1 at 2021-03-07 18:41:07 -0500
+Processing by ClientsController#create as */*
+  Parameters: {"client"=>{"name"=>"wcdwcwedd", "username"=>"zddd"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "zddd"], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mMarketplace Load (0.2ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces" ORDER BY "marketplaces"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "zddd"], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Create (0.6ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "marketplace_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "wcdwcwedd"], ["username", "zddd"], ["marketplace_id", 9], ["created_at", "2021-03-07 23:41:07.903906"], ["updated_at", "2021-03-07 23:41:07.903906"]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? AND "clients"."id" != ? LIMIT ?[0m  [["username", "zddd"], ["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:11:in `create'
+Completed 200 OK in 19ms (Views: 0.5ms | ActiveRecord: 3.3ms | Allocations: 5861)
+
+
+Started POST "/clients" for 127.0.0.1 at 2021-03-07 18:41:34 -0500
+Processing by ClientsController#create as */*
+  Parameters: {"client"=>{"name"=>"cccc", "username"=>"cccc"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "cccc"], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mMarketplace Load (0.2ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces" ORDER BY "marketplaces"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "cccc"], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Create (0.4ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "marketplace_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "cccc"], ["username", "cccc"], ["marketplace_id", 9], ["created_at", "2021-03-07 23:41:34.862802"], ["updated_at", "2021-03-07 23:41:34.862802"]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? AND "clients"."id" != ? LIMIT ?[0m  [["username", "cccc"], ["id", 45], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:11:in `create'
+Completed 200 OK in 14ms (Views: 0.3ms | ActiveRecord: 2.8ms | Allocations: 5861)
+
+
+Started POST "/clients" for 127.0.0.1 at 2021-03-07 18:41:50 -0500
+Processing by ClientsController#create as */*
+  Parameters: {"client"=>{"name"=>"aaa", "username"=>"aaa"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "aaa"], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mMarketplace Load (0.1ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces" ORDER BY "marketplaces"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "aaa"], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Create (0.4ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "marketplace_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "aaa"], ["username", "aaa"], ["marketplace_id", 9], ["created_at", "2021-03-07 23:41:50.044389"], ["updated_at", "2021-03-07 23:41:50.044389"]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? AND "clients"."id" != ? LIMIT ?[0m  [["username", "aaa"], ["id", 46], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:11:in `create'
+Completed 200 OK in 15ms (Views: 0.3ms | ActiveRecord: 2.9ms | Allocations: 5861)
+
+
+Started POST "/clients" for 127.0.0.1 at 2021-03-07 18:42:22 -0500
+Processing by ClientsController#create as */*
+  Parameters: {"client"=>{"name"=>"sdfdf", "username"=>"dfdf"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "dfdf"], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mMarketplace Load (0.1ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces" ORDER BY "marketplaces"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "dfdf"], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Create (0.6ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "marketplace_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "sdfdf"], ["username", "dfdf"], ["marketplace_id", 9], ["created_at", "2021-03-07 23:42:22.623267"], ["updated_at", "2021-03-07 23:42:22.623267"]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? AND "clients"."id" != ? LIMIT ?[0m  [["username", "dfdf"], ["id", 47], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:11:in `create'
+Completed 200 OK in 17ms (Views: 0.3ms | ActiveRecord: 2.8ms | Allocations: 5861)
+
+
+Started POST "/clients" for 127.0.0.1 at 2021-03-07 18:42:50 -0500
+Processing by ClientsController#create as */*
+  Parameters: {"client"=>{"name"=>"dfffff", "username"=>"ffff"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "ffff"], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mMarketplace Load (0.1ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces" ORDER BY "marketplaces"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "ffff"], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Create (0.4ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "marketplace_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "dfffff"], ["username", "ffff"], ["marketplace_id", 9], ["created_at", "2021-03-07 23:42:50.150924"], ["updated_at", "2021-03-07 23:42:50.150924"]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? AND "clients"."id" != ? LIMIT ?[0m  [["username", "ffff"], ["id", 48], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:11:in `create'
+Completed 200 OK in 13ms (Views: 0.3ms | ActiveRecord: 2.5ms | Allocations: 5862)
+
+
+Started POST "/clients" for 127.0.0.1 at 2021-03-07 18:43:05 -0500
+Processing by ClientsController#create as */*
+  Parameters: {"client"=>{"name"=>"dfff", "username"=>"fff"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "fff"], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mMarketplace Load (0.1ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces" ORDER BY "marketplaces"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "fff"], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Create (0.4ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "marketplace_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "dfff"], ["username", "fff"], ["marketplace_id", 9], ["created_at", "2021-03-07 23:43:05.259474"], ["updated_at", "2021-03-07 23:43:05.259474"]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? AND "clients"."id" != ? LIMIT ?[0m  [["username", "fff"], ["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:11:in `create'
+Completed 200 OK in 14ms (Views: 0.3ms | ActiveRecord: 2.5ms | Allocations: 5861)
+
+
+Started POST "/clients" for 127.0.0.1 at 2021-03-07 18:43:44 -0500
+Processing by ClientsController#create as */*
+  Parameters: {"client"=>{"name"=>"aaaa", "username"=>"aaaaa"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "aaaaa"], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mMarketplace Load (0.1ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces" ORDER BY "marketplaces"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "aaaaa"], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Create (0.4ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "marketplace_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "aaaa"], ["username", "aaaaa"], ["marketplace_id", 9], ["created_at", "2021-03-07 23:43:44.016973"], ["updated_at", "2021-03-07 23:43:44.016973"]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? AND "clients"."id" != ? LIMIT ?[0m  [["username", "aaaaa"], ["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:11:in `create'
+Completed 200 OK in 15ms (Views: 0.3ms | ActiveRecord: 2.4ms | Allocations: 5861)
+
+
+Started POST "/clients" for 127.0.0.1 at 2021-03-07 18:43:52 -0500
+Processing by ClientsController#create as */*
+  Parameters: {"client"=>{"name"=>"dddd", "username"=>"dddd"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "dddd"], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mMarketplace Load (0.2ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces" ORDER BY "marketplaces"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "dddd"], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Create (0.6ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "marketplace_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "dddd"], ["username", "dddd"], ["marketplace_id", 9], ["created_at", "2021-03-07 23:43:52.631531"], ["updated_at", "2021-03-07 23:43:52.631531"]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? AND "clients"."id" != ? LIMIT ?[0m  [["username", "dddd"], ["id", 51], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:11:in `create'
+Completed 200 OK in 15ms (Views: 0.2ms | ActiveRecord: 2.9ms | Allocations: 5861)
+
+
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mMarketplace Load (0.1ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMarketplace Destroy (0.4ms)[0m  [1m[31mDELETE FROM "marketplaces" WHERE "marketplaces"."id" = ?[0m  [["id", 9]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.4ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 32]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.2ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 33]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.2ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 34]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.3ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 35]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.3ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 36]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.3ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 37]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.2ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 38]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.5ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 39]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.3ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 40]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.4ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 41]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.3ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 42]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.2ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 43]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.2ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 44]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.5ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 45]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.2ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 46]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.3ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 47]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.2ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 48]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.3ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 49]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.2ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 50]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Destroy (0.2ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 51]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProject Destroy (0.3ms)[0m  [1m[31mDELETE FROM "projects" WHERE "projects"."id" = ?[0m  [["id", 42]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "projects" WHERE "projects"."id" = ?[0m  [["id", 43]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "projects" WHERE "projects"."id" = ?[0m  [["id", 44]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProject Destroy (0.3ms)[0m  [1m[31mDELETE FROM "projects" WHERE "projects"."id" = ?[0m  [["id", 45]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "projects" WHERE "projects"."id" = ?[0m  [["id", 46]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "projects" WHERE "projects"."id" = ?[0m  [["id", 47]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "projects" WHERE "projects"."id" = ?[0m  [["id", 48]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "projects" WHERE "projects"."id" = ?[0m  [["id", 49]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "projects" WHERE "projects"."id" = ?[0m  [["id", 50]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "projects" WHERE "projects"."id" = ?[0m  [["id", 51]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts"[0m
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers"[0m
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMarketplace Create (0.3ms)[0m  [1m[32mINSERT INTO "marketplaces" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2021-03-07 23:46:28.745239"], ["updated_at", "2021-03-07 23:46:28.745239"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "jlepler"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mMarketplace Load (0.2ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces" ORDER BY "marketplaces"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "jlepler"], ["LIMIT", 1]]
+  [1m[36mClient Create (0.3ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "marketplace_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Jacob"], ["username", "jlepler"], ["marketplace_id", 10], ["created_at", "2021-03-07 23:46:28.787070"], ["updated_at", "2021-03-07 23:46:28.787070"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "enda_altenwerth"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mMarketplace Load (0.1ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces" ORDER BY "marketplaces"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "enda_altenwerth"], ["LIMIT", 1]]
+  [1m[36mClient Create (0.3ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "marketplace_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Coy Kunze"], ["username", "enda_altenwerth"], ["marketplace_id", 10], ["created_at", "2021-03-07 23:46:29.026643"], ["updated_at", "2021-03-07 23:46:29.026643"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "pam_murazik"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mMarketplace Load (0.1ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces" ORDER BY "marketplaces"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "pam_murazik"], ["LIMIT", 1]]
+  [1m[36mClient Create (0.3ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "marketplace_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Miss Annamae Connelly"], ["username", "pam_murazik"], ["marketplace_id", 10], ["created_at", "2021-03-07 23:46:29.039761"], ["updated_at", "2021-03-07 23:46:29.039761"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "alfredo_west"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mMarketplace Load (0.1ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces" ORDER BY "marketplaces"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "alfredo_west"], ["LIMIT", 1]]
+  [1m[36mClient Create (0.3ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "marketplace_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Anamaria Watsica"], ["username", "alfredo_west"], ["marketplace_id", 10], ["created_at", "2021-03-07 23:46:29.060744"], ["updated_at", "2021-03-07 23:46:29.060744"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProject Create (0.3ms)[0m  [1m[32mINSERT INTO "projects" ("title", "skills", "description", "duration", "client_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Need someone to create a very simple Purchasing process manual and/or flowchart"], ["skills", "Confidence,Proactive,Work under pressure,Communication,Confidence"], ["description", "Deserunt placeat qui. Quasi expedita aperiam. Beatae distinctio iusto."], ["duration", "4 day/s"], ["client_id", 54], ["created_at", "2021-03-07 23:46:29.066476"], ["updated_at", "2021-03-07 23:46:29.066476"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProject Create (0.3ms)[0m  [1m[32mINSERT INTO "projects" ("title", "skills", "description", "duration", "client_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Lead operational process optimization to enable company to scale."], ["skills", "Proactive,Self-motivated,Self-motivated,Communication,Technical savvy"], ["description", "Minima aut eum. Voluptate et tenetur. Ut rerum accusamus."], ["duration", "5 month/s"], ["client_id", 54], ["created_at", "2021-03-07 23:46:29.073304"], ["updated_at", "2021-03-07 23:46:29.073304"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProject Create (0.3ms)[0m  [1m[32mINSERT INTO "projects" ("title", "skills", "description", "duration", "client_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Advertising, social media, branding , marketing expert"], ["skills", "Networking skills,Leadership,Organisation,Confidence,Teamwork"], ["description", "Debitis aut et. Dolores consequuntur libero. Esse rem praesentium."], ["duration", "3 month/s"], ["client_id", 55], ["created_at", "2021-03-07 23:46:29.079713"], ["updated_at", "2021-03-07 23:46:29.079713"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProject Create (0.3ms)[0m  [1m[32mINSERT INTO "projects" ("title", "skills", "description", "duration", "client_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Facebook Advertising campaign manager needed"], ["skills", "Confidence,Confidence,Technical savvy,Work under pressure,Networking skills"], ["description", "Voluptas qui autem. Est velit doloremque. Non non minus."], ["duration", "3 month/s"], ["client_id", 55], ["created_at", "2021-03-07 23:46:29.086248"], ["updated_at", "2021-03-07 23:46:29.086248"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProject Create (0.3ms)[0m  [1m[32mINSERT INTO "projects" ("title", "skills", "description", "duration", "client_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Need someone to create a very simple Purchasing process manual and/or flowchart"], ["skills", "Technical savvy,Self-motivated,Self-motivated,Teamwork,Fast learner"], ["description", "Dolorem aspernatur rerum. Vel eius perferendis. Delectus est nihil."], ["duration", "5 day/s"], ["client_id", 52], ["created_at", "2021-03-07 23:46:29.092593"], ["updated_at", "2021-03-07 23:46:29.092593"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProject Create (0.4ms)[0m  [1m[32mINSERT INTO "projects" ("title", "skills", "description", "duration", "client_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Advertising, social media, branding , marketing expert"], ["skills", "Confidence,Networking skills,Organisation,Proactive,Leadership"], ["description", "Qui impedit numquam. Porro eos ab. Aliquid cum dolore."], ["duration", "1 month/s"], ["client_id", 53], ["created_at", "2021-03-07 23:46:29.098754"], ["updated_at", "2021-03-07 23:46:29.098754"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProject Create (0.4ms)[0m  [1m[32mINSERT INTO "projects" ("title", "skills", "description", "duration", "client_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Need someone to create a very simple Purchasing process manual and/or flowchart"], ["skills", "Organisation,Organisation,Confidence,Confidence,Self-motivated"], ["description", "Qui voluptatem animi. Aliquam sed eaque. Eos eum voluptatibus."], ["duration", "3 month/s"], ["client_id", 53], ["created_at", "2021-03-07 23:46:29.105546"], ["updated_at", "2021-03-07 23:46:29.105546"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProject Create (0.5ms)[0m  [1m[32mINSERT INTO "projects" ("title", "skills", "description", "duration", "client_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "I need an android/IOS/Linux full-stack developer for my calling server and app project."], ["skills", "Technical savvy,Confidence,Proactive,Technical savvy,Networking skills"], ["description", "Ut repudiandae dolorem. Ut cum possimus. Aperiam odit saepe."], ["duration", "6 month/s"], ["client_id", 54], ["created_at", "2021-03-07 23:46:29.111087"], ["updated_at", "2021-03-07 23:46:29.111087"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProject Create (0.3ms)[0m  [1m[32mINSERT INTO "projects" ("title", "skills", "description", "duration", "client_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Python Developer required for developing very small api"], ["skills", "Proactive,Leadership,Technical savvy,Self-motivated,Organisation"], ["description", "Accusamus mollitia nihil. Impedit rerum dolores. Minima molestiae quis."], ["duration", "5 month/s"], ["client_id", 54], ["created_at", "2021-03-07 23:46:29.117377"], ["updated_at", "2021-03-07 23:46:29.117377"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProject Create (0.4ms)[0m  [1m[32mINSERT INTO "projects" ("title", "skills", "description", "duration", "client_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Lead operational process optimization to enable company to scale."], ["skills", "Proactive,Self-motivated,Communication,Proactive,Problem solving"], ["description", "Est porro nihil. Quia quo dolorem. Eum qui praesentium."], ["duration", "3 month/s"], ["client_id", 55], ["created_at", "2021-03-07 23:46:29.122685"], ["updated_at", "2021-03-07 23:46:29.122685"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+Started POST "/clients" for 127.0.0.1 at 2021-03-07 18:47:18 -0500
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ClientsController#create as */*
+  Parameters: {"client"=>{"name"=>"kkk", "username"=>"iiki"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "iiki"], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mMarketplace Load (0.3ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces" ORDER BY "marketplaces"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "iiki"], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Create (0.6ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "marketplace_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "kkk"], ["username", "iiki"], ["marketplace_id", 10], ["created_at", "2021-03-07 23:47:18.676726"], ["updated_at", "2021-03-07 23:47:18.676726"]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? AND "clients"."id" != ? LIMIT ?[0m  [["username", "iiki"], ["id", 56], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:11:in `create'
+Completed 200 OK in 37ms (Views: 0.3ms | ActiveRecord: 4.0ms | Allocations: 18144)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-03-07 19:52:53 -0500
+  
+AbstractController::ActionNotFound (The action 'login' could not be found for ClientsController):
+  
+actionpack (6.1.3) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/login" for 127.0.0.1 at 2021-03-07 19:54:33 -0500
+Processing by ClientsController#login as */*
+Completed 200 OK in 1ms (Views: 0.2ms | Allocations: 111)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-03-07 19:54:44 -0500
+Processing by ClientsController#login as */*
+Completed 200 OK in 0ms (Views: 0.1ms | Allocations: 92)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-03-07 19:55:38 -0500
+Processing by ClientsController#login as */*
+Completed 200 OK in 0ms (Views: 0.2ms | Allocations: 112)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-03-07 19:56:24 -0500
+Processing by ClientsController#login as */*
+Completed 200 OK in 0ms (Views: 0.1ms | Allocations: 109)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-03-07 20:00:39 -0500
+Processing by ClientsController#login as */*
+Completed 200 OK in 1ms (Views: 0.2ms | Allocations: 123)
+
+
+Started GET "/clients/login" for 127.0.0.1 at 2021-03-07 20:15:01 -0500
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for ClientsController):
+  
+actionpack (6.1.3) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/clients/login/asdf" for 127.0.0.1 at 2021-03-07 20:26:40 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/clients/login/asdf"):
+  
+Started GET "/clients/login/asdf" for 127.0.0.1 at 2021-03-07 20:27:18 -0500
+  
+ArgumentError (Invalid route name: 'login_:username'):
+  
+config/routes.rb:10:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/clients/login/asdf" for 127.0.0.1 at 2021-03-07 20:32:22 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/clients/login/asdf"):
+  
+Started GET "/clients/login/asdf" for 127.0.0.1 at 2021-03-07 20:33:05 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/clients/login/asdf"):
+  
+Started GET "/clients/login/asdf" for 127.0.0.1 at 2021-03-07 20:34:28 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/clients/login/asdf"):
+  
+Started GET "/login/asdf" for 127.0.0.1 at 2021-03-07 20:34:40 -0500
+Processing by ClientsController#login as */*
+  Parameters: {"username"=>"asdf"}
+Completed 200 OK in 1ms (Views: 0.3ms | Allocations: 125)
+
+
+Started GET "/clients/login/asdf" for 127.0.0.1 at 2021-03-07 20:35:25 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/clients/login/asdf"):
+  
+Started GET "/clients/login/asdf" for 127.0.0.1 at 2021-03-07 20:35:52 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/clients/login/asdf"):
+  
+Started GET "/clients/login/asdf" for 127.0.0.1 at 2021-03-07 20:36:04 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/clients/login/asdf"):
+  
+Started GET "/clients/login/asdf" for 127.0.0.1 at 2021-03-07 20:36:24 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/clients/login/asdf"):
+  
+Started GET "/login/asdf" for 127.0.0.1 at 2021-03-07 20:36:46 -0500
+Processing by ClientsController#login as */*
+  Parameters: {"username"=>"asdf"}
+Completed 200 OK in 1ms (Views: 0.2ms | Allocations: 125)
+
+
+Started GET "/login/asdf" for 127.0.0.1 at 2021-03-07 20:38:02 -0500
+Processing by ClientsController#login as */*
+  Parameters: {"username"=>"asdf"}
+Completed 200 OK in 0ms (Views: 0.2ms | Allocations: 105)
+
+
+Started GET "/login/Jacob" for 127.0.0.1 at 2021-03-07 20:40:31 -0500
+Processing by ClientsController#login as */*
+  Parameters: {"username"=>"Jacob"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/clients_controller.rb:23:in `login'
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "Jacob"], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:23:in `login'
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 1.2ms | Allocations: 3634)
+
+
+Started GET "/login/jlepler" for 127.0.0.1 at 2021-03-07 20:41:00 -0500
+Processing by ClientsController#login as */*
+  Parameters: {"username"=>"jlepler"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "jlepler"], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:23:in `login'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 3126)
+
+
+Started GET "/login/fsdf" for 127.0.0.1 at 2021-03-07 21:04:17 -0500
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#login as */*
+  Parameters: {"username"=>"fsdf"}
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "fsdf"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `login'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."username" = ? LIMIT ?[0m  [["username", "fsdf"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `login'
+Completed 401 Unauthorized in 29ms (Views: 0.3ms | ActiveRecord: 1.3ms | Allocations: 9998)
+
+
+Started GET "/login/sdf" for 127.0.0.1 at 2021-03-07 21:10:45 -0500
+Processing by SessionsController#login as */*
+  Parameters: {"username"=>"sdf"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/sessions_controller.rb:3:in `login'
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "sdf"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `login'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."username" = ? LIMIT ?[0m  [["username", "sdf"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `login'
+Completed 401 Unauthorized in 4ms (Views: 0.3ms | ActiveRecord: 0.9ms | Allocations: 1403)
+
+
+Started GET "/login/sdf" for 127.0.0.1 at 2021-03-07 21:11:38 -0500
+Processing by SessionsController#login as */*
+  Parameters: {"username"=>"sdf"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "sdf"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `login'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."username" = ? LIMIT ?[0m  [["username", "sdf"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `login'
+Completed 401 Unauthorized in 3ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 917)
+
+
+Started GET "/login/sdf" for 127.0.0.1 at 2021-03-07 21:12:46 -0500
+Processing by SessionsController#login as */*
+  Parameters: {"username"=>"sdf"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "sdf"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `login'
+  [1m[36mFreelancer Load (0.1ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."username" = ? LIMIT ?[0m  [["username", "sdf"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `login'
+Completed 401 Unauthorized in 3ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 917)
+
+
+Started GET "/login/jlepler" for 127.0.0.1 at 2021-03-07 21:15:32 -0500
+Processing by SessionsController#login as */*
+  Parameters: {"username"=>"jlepler"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/sessions_controller.rb:3:in `login'
+  [1m[36mClient Load (0.5ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "jlepler"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `login'
+Completed 200 OK in 15ms (Views: 0.2ms | ActiveRecord: 2.0ms | Allocations: 7004)
+
+
+Started GET "/login/sdf" for 127.0.0.1 at 2021-03-07 21:20:18 -0500
+Processing by SessionsController#login as */*
+  Parameters: {"username"=>"sdf"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "sdf"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `login'
+  [1m[36mFreelancer Load (0.1ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."username" = ? LIMIT ?[0m  [["username", "sdf"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `login'
+Completed 401 Unauthorized in 17ms (Views: 0.2ms | ActiveRecord: 0.6ms | Allocations: 4878)
+
+
+Started GET "/login/asdf" for 127.0.0.1 at 2021-03-07 21:21:36 -0500
+Processing by SessionsController#login as */*
+  Parameters: {"username"=>"asdf"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "asdf"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `login'
+  [1m[36mFreelancer Load (0.1ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."username" = ? LIMIT ?[0m  [["username", "asdf"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `login'
+Completed 401 Unauthorized in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 900)
+
+
+Started GET "/login/sdf" for 127.0.0.1 at 2021-03-07 21:25:12 -0500
+Processing by SessionsController#login as */*
+  Parameters: {"username"=>"sdf"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "sdf"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `login'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."username" = ? LIMIT ?[0m  [["username", "sdf"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `login'
+Completed 401 Unauthorized in 4ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 900)
+
+
+Started GET "/login/sdf" for 127.0.0.1 at 2021-03-07 21:26:49 -0500
+Processing by SessionsController#login as */*
+  Parameters: {"username"=>"sdf"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/sessions_controller.rb:3:in `login'
+  [1m[36mClient Load (0.4ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "sdf"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `login'
+  [1m[36mFreelancer Load (0.3ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."username" = ? LIMIT ?[0m  [["username", "sdf"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `login'
+Completed 401 Unauthorized in 19ms (Views: 0.3ms | ActiveRecord: 2.0ms | Allocations: 6930)
+
+
+Started GET "/login/sdf" for 127.0.0.1 at 2021-03-07 21:27:09 -0500
+Processing by SessionsController#login as */*
+  Parameters: {"username"=>"sdf"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/sessions_controller.rb:3:in `login'
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "sdf"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `login'
+  [1m[36mFreelancer Load (0.1ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."username" = ? LIMIT ?[0m  [["username", "sdf"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `login'
+Completed 401 Unauthorized in 12ms (Views: 0.2ms | ActiveRecord: 1.6ms | Allocations: 6928)
+
+
+Started GET "/login/sdf" for 127.0.0.1 at 2021-03-07 21:27:50 -0500
+  
+SyntaxError (/Users/jlepler/Flatiron/phase-three/project/bidworx/bidworx-backend/app/controllers/sessions_controller.rb:5: syntax error, unexpected tLABEL
+...pe: 'success', [login: message: 'Login successful'], user_id...
+...                       ^~~~~~~~
+/Users/jlepler/Flatiron/phase-three/project/bidworx/bidworx-backend/app/controllers/sessions_controller.rb:5: syntax error, unexpected ']', expecting end
+...n: message: 'Login successful'], user_id: is_client.id.to_s}
+...                              ^
+/Users/jlepler/Flatiron/phase-three/project/bidworx/bidworx-backend/app/controllers/sessions_controller.rb:5: syntax error, unexpected '}', expecting end
+...'], user_id: is_client.id.to_s}
+...                              ^):
+  
+app/controllers/sessions_controller.rb:5: syntax error, unexpected tLABEL
+app/controllers/sessions_controller.rb:5: syntax error, unexpected ']', expecting end
+app/controllers/sessions_controller.rb:5: syntax error, unexpected '}', expecting end
+app/controllers/sessions_controller.rb:5: syntax error, unexpected tLABEL
+app/controllers/sessions_controller.rb:5: syntax error, unexpected ']', expecting end
+app/controllers/sessions_controller.rb:5: syntax error, unexpected '}', expecting end
+Started GET "/login/sdf" for 127.0.0.1 at 2021-03-07 21:28:38 -0500
+Processing by SessionsController#login as */*
+  Parameters: {"username"=>"sdf"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/sessions_controller.rb:3:in `login'
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "sdf"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `login'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."username" = ? LIMIT ?[0m  [["username", "sdf"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `login'
+Completed 401 Unauthorized in 13ms (Views: 0.2ms | ActiveRecord: 1.7ms | Allocations: 6933)
+
+
+Started GET "/login/jlepler" for 127.0.0.1 at 2021-03-07 21:30:01 -0500
+Processing by SessionsController#login as */*
+  Parameters: {"username"=>"jlepler"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "jlepler"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `login'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 3320)
+
+
+Started GET "/login/jlepler" for 127.0.0.1 at 2021-03-07 21:35:10 -0500
+Processing by SessionsController#login as */*
+  Parameters: {"username"=>"jlepler"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "jlepler"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `login'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 543)
+
+
+Started GET "/login/jlepler" for 127.0.0.1 at 2021-03-07 21:35:45 -0500
+Processing by SessionsController#login as */*
+  Parameters: {"username"=>"jlepler"}
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "jlepler"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `login'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 543)
+
+
+Started GET "/login/jlepler" for 127.0.0.1 at 2021-03-07 21:36:28 -0500
+Processing by SessionsController#login as */*
+  Parameters: {"username"=>"jlepler"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "jlepler"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `login'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 543)
+
+
+Started POST "/clients" for 127.0.0.1 at 2021-03-08 10:16:20 -0500
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ClientsController#create as */*
+  Parameters: {"client"=>{"name"=>"sdfsdf", "username"=>"sdfsdf"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mClient Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "sdfsdf"], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/clients_controller.rb:8:in `create'
+  [1m[36mMarketplace Load (0.6ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces" ORDER BY "marketplaces"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "sdfsdf"], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Create (1.3ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "marketplace_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "sdfsdf"], ["username", "sdfsdf"], ["marketplace_id", 10], ["created_at", "2021-03-08 15:16:20.807353"], ["updated_at", "2021-03-08 15:16:20.807353"]]
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/clients_controller.rb:10:in `create'
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? AND "clients"."id" != ? LIMIT ?[0m  [["username", "sdfsdf"], ["id", 57], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:11:in `create'
+Completed 200 OK in 47ms (Views: 0.4ms | ActiveRecord: 5.5ms | Allocations: 18141)
+
+

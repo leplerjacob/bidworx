@@ -1,4 +1,4 @@
-import { getAllClients, postNewUser } from "./fetch.js";
+import { getAllClients, postNewUser, logInUser } from "./fetch.js";
 import Notification from "./Notification.js";
 import checkIfLoggedIn from "./session.js";
 import SignUpForm from "./SignupForm.js";
@@ -12,43 +12,47 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Toggles display according to whether or not user is logged in. Before init(0)
 function toggleInitDisplay() {
+  console.log("This runs again");
   if (checkIfLoggedIn()) {
+    console.log("Logged in");
     document.querySelector("section.login-signup").style.display = "none";
   } else {
+    console.log("Not logged in");
     document.querySelector("section.dashboard").style.display = "none";
   }
 }
 // Components
 function init() {
   signUpForm();
+  login();
 }
 
 function signUpForm() {
   document.querySelector(".signup-button").addEventListener("click", () => {
-    // const logSign = document.querySelector('section.login-signup')
-    // logSign.style.display = 'none'
 
+    // Grabs display and makes the two sides (login & signup) invisible
     const card = document.querySelector(".card");
     const loginSide = document.querySelector(".login");
     const signupSide = document.querySelector(".signup");
     loginSide.style.display = "none";
     signupSide.style.display = "none";
+
+    // Changes card css to accomodate single form-card
     card.className = "inner-card";
+    // Inserts signUpForm. CHANGE
     card.innerHTML += SignUpForm();
 
+    // Adds event listener to sign up form
     const form = document.querySelector(".form-register");
     console.log(form);
     form.addEventListener("submit", handleSignupSubmit);
-    // Add event listener for submit of form
-    // make fetch POST request to create new user
-    // redirect to login-sign up form
-    // login to start using dashboard
+
+    // If login is successful, toggle dashboard & logins visibility
   });
 }
 
 function handleSignupSubmit(e) {
   e.preventDefault();
-  e.target.disabled = true;
   const newUser = {
     client: {
       name: e.target.name.value,
@@ -69,10 +73,37 @@ function handleSignupSubmit(e) {
     Notification(res).forEach((notify) => {
       const body = document.querySelector("body");
       body.innerHTML += notify;
+      signUpForm();
       setTimeout(() => {
-        const el = document.querySelector('.notify')
-        el.remove()
-      },5000);
+        const el = document.querySelector(".notify");
+        el.remove();
+      }, 5000);
+    });
+  });
+}
+
+function login() {
+  console.log("WHOA THERE");
+  const loginButton = document.querySelector(".login-user");
+  loginButton.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const username = e.target.username.value;
+    console.log(username);
+    logInUser(username).then((res) => {
+      console.log(res.user_id);
+      if (res.type == "success") {
+        window.localStorage.setItem("user_id", res.user_id);
+        toggleInitDisplay();
+      } else {
+        Notification(res).forEach((notify) => {
+          const body = document.querySelector("body");
+          body.innerHTML += notify;
+          setTimeout(() => {
+            const el = document.querySelector(".notify");
+            el.remove();
+          }, 5000);
+        });
+      }
     });
   });
 }

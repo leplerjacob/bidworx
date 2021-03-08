@@ -1,0 +1,23 @@
+Upon DOM load:
+    - session.js function checkIfLoggedIn will check if there is an existing user_id in localStorage: returns true or false
+
+    - init function will run
+        - This contains other functions that interact with the DOM and listen for events
+    
+        - Functions included so far...
+            - signUpForm
+            - login
+
+    - signUpForm listens for click event on "Sign Up" button. This event will only be applicable if the user was logged out and the login-signup section was made visible
+
+        - When button is clicked =>
+            toggles visibility of the login-side and signup-side to none, and makes a single form for signing up visible
+            
+            CHANGE ===> Move html from separate component to index.html file *****
+
+            CHANGE ===> Toggle visibility to a separate functional component
+
+        - 
+
+(TOGGLE FUNCTION NOTES)
+1.) Toggle section according to logged-in

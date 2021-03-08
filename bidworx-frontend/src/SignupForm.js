@@ -5,12 +5,12 @@ export default function SignupForm() {
         <h2>Sign Up Form</h2>
       </div>
       <div class="form">
-        <form action="/" class="form-register">
+        <form action="#" class="form-register">
           <label for="name">Name</label>
           <input type="text" name="name" class="name" />
           <label for="username">Username</label>
           <input type="text" name="username" class="username" />
-          <input type="submit" value="Submit">
+          <button type="submit" >Submit</button>
         </form>
       </div>
   </div>`;
