@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Toggles display according to whether or not user is logged in. Before init(0)
 function toggleInitDisplay() {
-  console.log("This runs again");
   if (checkIfLoggedIn()) {
     console.log("Logged in");
     document.querySelector("section.login-signup").style.display = "none";
@@ -23,8 +22,10 @@ function toggleInitDisplay() {
 }
 // Components
 function init() {
-  signUpForm();
-  login();
+  signUpForm()
+  login()
+  displayContracts()
+
 }
 
 function signUpForm() {
@@ -60,8 +61,6 @@ function handleSignupSubmit(e) {
     },
   };
 
-  console.log(newUser, e, "hi");
-
   const postReq = {
     headers: {
       "Content-Type": "application/json",
@@ -83,7 +82,6 @@ function handleSignupSubmit(e) {
 }
 
 function login() {
-  console.log("WHOA THERE");
   const loginButton = document.querySelector(".login-user");
   loginButton.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -106,4 +104,87 @@ function login() {
       }
     });
   });
+}
+
+function displayContracts(){
+// This function renders grid of contracts. 
+  const container = document.querySelector('.content.container > .client')
+  
+  console.log(container)
+
+  const cardContainer = document.createElement('div')
+  cardContainer.style.display = 'grid'
+  cardContainer.style.gridTemplateColumns = "repeat(3, 1fr)"
+  cardContainer.style.gridTemplateRows = "repeat(3, 1fr)"
+
+  const contractCard = document.createElement('div')
+  
+  
+  fetch('http://localhost:3000/1/contracts').then(res => res.json()).then(contracts => {
+    contracts.forEach(contract => {
+      
+      // Create elements for each card in the grid
+      contractCard.innerText = contract.project.title
+      // cardContainer.append(contractCard)
+
+      contractCard.addEventListener('click', () => renderContractCard(contract))
+
+      cardContainer.append(contractCard)
+    })
+  })
+
+  container.append(cardContainer)
+}
+    
+function renderContractCard(contract) {
+
+  console.log(contract.title, contract.project.title)
+
+// This function renders the single contract on click. 
+const card = document.createElement('div') 
+
+const cardBody = document.createElement('div')
+
+const projectName = document.createElement('h2')
+  projectName.innerText = contract.project.title
+
+const projectDescription = document.createElement('p')
+  projectDescription.innerText = contract.project.description
+
+const freelancerBody = document.createElement('div')
+
+const freelancerName = document.createElement('h2')
+  freelancerName.innerText = contract.freelancer.name
+
+const freelancerSkills = document.createElement('p')
+  freelancerSkills.innerText = contract.freelancer.skills
+
+const projectDuration = document.createElement('h2')
+  projectDuration.innerText = contract.project.duration 
+
+const projectCost = document.createElement('h2')
+  projectCost.innerText = contract.project_bid.price
+
+
+freelancerBody.append(freelancerName, freelancerSkills,)
+
+cardBody.append(projectName, projectDescription, freelancerBody, projectDuration, projectCost)
+
+card.append(cardBody)
+
+const contractSelector = document.querySelector(".content.container > .client")
+contractSelector.innerHTML = ""
+contractSelector.append(card)
+
+  
+
+
+
+
+
+
+// NOTES ON HOW TO RENDER SINGLE CARD
+  // Grab existing cards and change their style display to 'none'
+  // or expand the clicked card to full screen and container: z-index: 0, card: z-index: 1 => card would show above container
+
 }
