@@ -6,8 +6,6 @@ import SignUpForm from "./SignupForm.js";
 import ToggleInitDisplay from "./ToggleInitDisplay.js";
 import renderContractFullDetails from "./RenderContractFullDetails.js";
 
-import RunThisFunction from "./RunThis.js";
-
 // Initial render of webpage
 document.addEventListener("DOMContentLoaded", () => {
   init();
