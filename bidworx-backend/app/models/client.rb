@@ -5,4 +5,9 @@ class Client < ApplicationRecord
     has_many :freelancers, through: :contracts
 
     validates :username, presence: true, uniqueness: true
+
+    # def get_contracts
+    #     contracts = self.contracts
+
+    # end
 end
