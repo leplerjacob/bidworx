@@ -22,13 +22,16 @@ ActiveRecord::Schema.define(version: 2021_03_05_024935) do
   end
 
   create_table "contracts", force: :cascade do |t|
+    t.string "status", default: "in progress"
     t.integer "client_id"
     t.integer "freelancer_id"
     t.integer "project_id"
+    t.integer "project_bid_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["client_id"], name: "index_contracts_on_client_id"
     t.index ["freelancer_id"], name: "index_contracts_on_freelancer_id"
+    t.index ["project_bid_id"], name: "index_contracts_on_project_bid_id"
     t.index ["project_id"], name: "index_contracts_on_project_id"
   end
 

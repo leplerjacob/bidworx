@@ -2,6 +2,7 @@ import { getAllClients, postNewUser, logInUser } from "./fetch.js";
 import Notification from "./Notification.js";
 import checkIfLoggedIn from "./session.js";
 import SignUpForm from "./SignupForm.js";
+import renderContractFullDetails from "./RenderContractFullDetails.js";
 // const getAllClients = require('./fetch');
 
 // Initial render of webpage
@@ -22,15 +23,13 @@ function toggleInitDisplay() {
 }
 // Components
 function init() {
-  signUpForm()
-  login()
-  displayContracts()
-
+  signUpForm();
+  login();
+  displayContracts();
 }
 
 function signUpForm() {
   document.querySelector(".signup-button").addEventListener("click", () => {
-
     // Grabs display and makes the two sides (login & signup) invisible
     const card = document.querySelector(".card");
     const loginSide = document.querySelector(".login");
@@ -106,85 +105,32 @@ function login() {
   });
 }
 
-function displayContracts(){
-// This function renders grid of contracts. 
-  const container = document.querySelector('.content.container > .client')
-  
-  console.log(container)
+function displayContracts() {
+  // This function renders grid of contracts.
+  const contentContainer = document.querySelector(
+    ".content.container > .client"
+  );
 
-  const cardContainer = document.createElement('div')
-  cardContainer.style.display = 'grid'
-  cardContainer.style.gridTemplateColumns = "repeat(3, 1fr)"
-  cardContainer.style.gridTemplateRows = "repeat(3, 1fr)"
+  const cardsGrid = document.createElement("div");
+  cardsGrid.className = "contract-grid";
 
-  const contractCard = document.createElement('div')
-  
-  
-  fetch('http://localhost:3000/1/contracts').then(res => res.json()).then(contracts => {
-    contracts.forEach(contract => {
-      
-      // Create elements for each card in the grid
-      contractCard.innerText = contract.project.title
-      // cardContainer.append(contractCard)
+  fetch("http://localhost:3000/3/contracts")
+    .then((res) => res.json())
+    .then((contracts) => {
+      contracts.forEach((contract) => {
+        const contractCard = document.createElement("div");
+        contractCard.className = "contract-grid-item";
 
-      contractCard.addEventListener('click', () => renderContractCard(contract))
-
-      cardContainer.append(contractCard)
-    })
-  })
-
-  container.append(cardContainer)
-}
-    
-function renderContractCard(contract) {
-
-  console.log(contract.title, contract.project.title)
-
-// This function renders the single contract on click. 
-const card = document.createElement('div') 
-
-const cardBody = document.createElement('div')
-
-const projectName = document.createElement('h2')
-  projectName.innerText = contract.project.title
-
-const projectDescription = document.createElement('p')
-  projectDescription.innerText = contract.project.description
-
-const freelancerBody = document.createElement('div')
-
-const freelancerName = document.createElement('h2')
-  freelancerName.innerText = contract.freelancer.name
-
-const freelancerSkills = document.createElement('p')
-  freelancerSkills.innerText = contract.freelancer.skills
-
-const projectDuration = document.createElement('h2')
-  projectDuration.innerText = contract.project.duration 
-
-const projectCost = document.createElement('h2')
-  projectCost.innerText = contract.project_bid.price
+        contractCard.innerText += contract.project.title;
 
 
-freelancerBody.append(freelancerName, freelancerSkills,)
+        
+        contractCard.addEventListener("click", () => {
+          renderContractFullDetails(contract);
+        });
+        cardsGrid.append(contractCard);
+      });
+    });
 
-cardBody.append(projectName, projectDescription, freelancerBody, projectDuration, projectCost)
-
-card.append(cardBody)
-
-const contractSelector = document.querySelector(".content.container > .client")
-contractSelector.innerHTML = ""
-contractSelector.append(card)
-
-  
-
-
-
-
-
-
-// NOTES ON HOW TO RENDER SINGLE CARD
-  // Grab existing cards and change their style display to 'none'
-  // or expand the clicked card to full screen and container: z-index: 0, card: z-index: 1 => card would show above container
-
+  contentContainer.append(cardsGrid);
 }

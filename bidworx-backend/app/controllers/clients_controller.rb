@@ -1,7 +1,17 @@
 class ClientsController < ApplicationController
     def index
-        clients = Client.all
-        render json: clients
+        @clients = Client.all
+        render json: @clients
+    end
+
+    def show
+        @client = Client.find(params[:id])
+        render json: @client
+    end
+
+    def my_contracts
+        @contracts = Client.find(params[:id]).contracts
+        render json: @contracts, :except => [:updated_at, :created_at], :include => [client: {only: :name}, freelancer: {only: [:name, :skills]}, project: {only: [:title, :description, :duration]}, project_bid: {only: :price}]
     end
 
     def create

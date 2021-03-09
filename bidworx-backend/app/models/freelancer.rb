@@ -4,4 +4,6 @@ class Freelancer < ApplicationRecord
     belongs_to :marketplace
     has_many :clients, through: :contracts
     
+    # def updateStatus
+    # end
 end
