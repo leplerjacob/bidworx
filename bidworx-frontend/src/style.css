@@ -17,7 +17,7 @@ li {
 button {
   border: none;
   background: none;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   cursor: pointer;
 }
 /* ROOT CSS VARIABLES */
@@ -56,12 +56,12 @@ section {
   text-align: center;
 }
 
-.success span{
+.success span {
   color: green;
 }
 
-.failure span{
-  color: red
+.failure span {
+  color: red;
 }
 /* NOTIFICATION END */
 
@@ -78,6 +78,25 @@ section.dashboard .sidebar {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 50px auto;
+}
+
+section.dashboard .sidebar .navigation a {
+  width: 100%;
+  display: block;
+  text-align: center;
+  display: flex;
+  padding: 5px 0 5px 0;
+}
+
+section.dashboard .sidebar .navigation a:hover {
+  box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, 0.8);
+}
+
+section.dashboard .sidebar .navigation a span {
+  font-size: 1.125rem;
+  margin-left: 20%;
+  position: relative;
+  z-index: -1;
 }
 
 /* section.dashboard .sidebar .logo {
@@ -247,13 +266,59 @@ section.login-signup .container .signup .register button {
 
 /* DASHBOARD CLIENT CONTENT AREA */
 section.dashboard .container .client {
-  padding: 20px
+  padding: 20px;
 }
 
-section.dashboard .container .client .contract-grid{
+section.dashboard .container .client .contract-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   height: 100%;
   gap: 5px;
+  overflow: scroll;
+}
+
+section.dashboard .container .client .contract-grid .contract-grid-item {
+  display: grid;
+  height: 40%;
+  grid-template-rows: repeat(4, 25%);
+  grid-template-areas:
+    "status title title"
+    "fl_name . price"
+    "description description description"
+    "start_date . more_details";
+  overflow: hidden;
+}
+
+section.dashboard .container .client .contract-grid .contract-grid-item > * {
+  overflow: hidden;
+}
+
+section.dashboard
+  .container
+  .client
+  .contract-grid
+  .contract-grid-item
+  .contract-title {
+  word-wrap: break-word;
+}
+
+section.dashboard
+  .container
+  .client
+  .contract-grid
+  .contract-grid-item
+  .contract-title:hover {
+  overflow: scroll;
+  z-index: 2;
+}
+
+section.dashboard
+  .container
+  .client
+  .contract-grid
+  .contract-grid-item
+  .contract-more-details {
+  border: none;
+  background: rgb(218, 218, 218);
 }

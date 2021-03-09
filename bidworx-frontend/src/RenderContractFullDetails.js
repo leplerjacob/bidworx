@@ -1,7 +1,4 @@
-export default function RenderContractFullDetails(contract) {
-
-
-    
+export default function RenderContractFullDetails(contract, DisplayContracts) {
 
   const singleContractCard = document.createElement("div");
   singleContractCard.className = "contract card container";
@@ -30,8 +27,18 @@ export default function RenderContractFullDetails(contract) {
   projectCost.className = "contract project-bid";
   freelancerBody.append(freelancerName, freelancerSkills);
 
+  // Exit Button
+  const projectExitButton = document.createElement('button');
+  projectExitButton.className = "exit"
+  projectExitButton.innerText = "X"
+  projectExitButton.addEventListener("click", () => {
+    contractSelector.innerHTML = "";
+    DisplayContracts(RenderContractFullDetails);
+  })
+
   contractCardBody.append(
     projectName,
+    projectExitButton,
     projectDescription,
     freelancerBody,
     projectDuration,
@@ -42,7 +49,7 @@ export default function RenderContractFullDetails(contract) {
 
   const contractSelector = document.querySelector(
     ".content.container > .client"
-  );
-  contractSelector.innerHTML = "";
+    );
+    contractSelector.innerHTML = "";
   contractSelector.append(singleContractCard);
 }

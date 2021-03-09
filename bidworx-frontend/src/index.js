@@ -1,31 +1,25 @@
 import { getAllClients, postNewUser, logInUser } from "./fetch.js";
 import Notification from "./Notification.js";
+import DisplayContracts from "./DisplayContracts.js";
 import checkIfLoggedIn from "./session.js";
 import SignUpForm from "./SignupForm.js";
+import ToggleInitDisplay from "./ToggleInitDisplay.js";
 import renderContractFullDetails from "./RenderContractFullDetails.js";
-// const getAllClients = require('./fetch');
+
+import RunThisFunction from "./RunThis.js";
 
 // Initial render of webpage
 document.addEventListener("DOMContentLoaded", () => {
-  toggleInitDisplay();
   init();
 });
 
-// Toggles display according to whether or not user is logged in. Before init(0)
-function toggleInitDisplay() {
-  if (checkIfLoggedIn()) {
-    console.log("Logged in");
-    document.querySelector("section.login-signup").style.display = "none";
-  } else {
-    console.log("Not logged in");
-    document.querySelector("section.dashboard").style.display = "none";
-  }
-}
 // Components
 function init() {
+  ToggleInitDisplay(checkIfLoggedIn);
   signUpForm();
   login();
-  displayContracts();
+  DisplayContracts(renderContractFullDetails);
+  navigation();
 }
 
 function signUpForm() {
@@ -105,32 +99,38 @@ function login() {
   });
 }
 
-function displayContracts() {
-  // This function renders grid of contracts.
-  const contentContainer = document.querySelector(
-    ".content.container > .client"
-  );
+function navigation() {
+  const nav = document.querySelector(".navigation");
+  nav.addEventListener("click", (e) => {
+    console.log(e.target.className.split(" ")[1]);
+    switch (e.target.className.split(" ")[1]) {
+      case "view-contracts": {
+        clearDash();
+        DisplayContracts(renderContractFullDetails);
+        break;
+      }
+      case "view-contracts": {
+        clearDash();
+        DisplayContracts(renderContractFullDetails);
+        break;
+      }
+      case "view-contracts": {
+        clearDash();
+        DisplayContracts(renderContractFullDetails);
+        break;
+      }
+      case "view-contracts": {
+        clearDash();
+        DisplayContracts(renderContractFullDetails);
+        break;
+      }
+      default:
+        break;
+    }
+  });
+}
 
-  const cardsGrid = document.createElement("div");
-  cardsGrid.className = "contract-grid";
-
-  fetch("http://localhost:3000/3/contracts")
-    .then((res) => res.json())
-    .then((contracts) => {
-      contracts.forEach((contract) => {
-        const contractCard = document.createElement("div");
-        contractCard.className = "contract-grid-item";
-
-        contractCard.innerText += contract.project.title;
-
-
-        
-        contractCard.addEventListener("click", () => {
-          renderContractFullDetails(contract);
-        });
-        cardsGrid.append(contractCard);
-      });
-    });
-
-  contentContainer.append(cardsGrid);
+function clearDash() {
+  const el = document.querySelector(".content.container div:nth-child(2)");
+  el.innerHTML = "";
 }
