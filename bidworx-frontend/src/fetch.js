@@ -46,3 +46,4 @@ export async function getBidFreelancer(id){
   const data = await response.json()
   return data
 }
+

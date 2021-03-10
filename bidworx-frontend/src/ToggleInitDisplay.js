@@ -1,5 +1,6 @@
 // Toggles display according to whether or not user is logged in. Before init(0)
 export default function toggleInitDisplay(checkIfLoggedIn) {
+    const user = checkIfLoggedIn()
 
     if (checkIfLoggedIn()) {
       console.log("Logged in");

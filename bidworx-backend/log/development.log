@@ -35815,3 +35815,1201 @@ Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms | Allocations: 486)
 ActiveRecord::RecordNotFound (Couldn't find Client with 'id'=null):
   
 app/controllers/clients_controller.rb:13:in `my_contracts'
+Started GET "/null/contracts" for 127.0.0.1 at 2021-03-10 15:36:54 -0500
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+Completed 404 Not Found in 22ms (ActiveRecord: 0.6ms | Allocations: 7049)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Client with 'id'=null):
+  
+app/controllers/clients_controller.rb:13:in `my_contracts'
+Started GET "/login/" for 127.0.0.1 at 2021-03-10 15:36:55 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/login"):
+  
+Started GET "/login/jlepler" for 127.0.0.1 at 2021-03-10 15:37:17 -0500
+Processing by SessionsController#login as */*
+  Parameters: {"username"=>"jlepler"}
+  [1m[36mClient Load (0.8ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "jlepler"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `login'
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 0.8ms | Allocations: 3579)
+
+
+Started GET "/null/contracts" for 127.0.0.1 at 2021-03-10 15:37:22 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mClient Load (0.4ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.4ms | Allocations: 503)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Client with 'id'=null):
+  
+app/controllers/clients_controller.rb:13:in `my_contracts'
+Started GET "/login/jleplers" for 127.0.0.1 at 2021-03-10 15:37:25 -0500
+Processing by SessionsController#login as */*
+  Parameters: {"username"=>"jleplers"}
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "jleplers"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `login'
+Started GET "/login/jleplers" for 127.0.0.1 at 2021-03-10 15:37:25 -0500
+Processing by SessionsController#login as */*
+  Parameters: {"username"=>"jleplers"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/sessions_controller.rb:3:in `login'
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "jleplers"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `login'
+  [1m[36mFreelancer Load (0.6ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."username" = ? LIMIT ?[0m  [["username", "jleplers"], ["LIMIT", 1]]
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."username" = ? LIMIT ?[0m  [["username", "jleplers"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `login'
+  ↳ app/controllers/sessions_controller.rb:7:in `login'
+Completed 401 Unauthorized in 24ms (Views: 0.3ms | ActiveRecord: 1.2ms | Allocations: 6911)
+
+
+Completed 401 Unauthorized in 18ms (Views: 0.2ms | ActiveRecord: 0.8ms | Allocations: 5809)
+
+
+Started GET "/null/contracts" for 127.0.0.1 at 2021-03-10 15:37:31 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mClient Load (0.4ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.4ms | Allocations: 520)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Client with 'id'=null):
+  
+app/controllers/clients_controller.rb:13:in `my_contracts'
+Started GET "/null/contracts" for 127.0.0.1 at 2021-03-10 15:37:33 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms | Allocations: 486)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Client with 'id'=null):
+  
+app/controllers/clients_controller.rb:13:in `my_contracts'
+Started GET "/null/contracts" for 127.0.0.1 at 2021-03-10 15:37:37 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms | Allocations: 486)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Client with 'id'=null):
+  
+app/controllers/clients_controller.rb:13:in `my_contracts'
+Started GET "/login/jlepler" for 127.0.0.1 at 2021-03-10 15:37:42 -0500
+Processing by SessionsController#login as */*
+  Parameters: {"username"=>"jlepler"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "jlepler"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `login'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 542)
+
+
+Started GET "/null/contracts" for 127.0.0.1 at 2021-03-10 15:38:10 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms | Allocations: 487)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Client with 'id'=null):
+  
+app/controllers/clients_controller.rb:13:in `my_contracts'
+Started GET "/login/jlepler" for 127.0.0.1 at 2021-03-10 15:38:12 -0500
+Processing by SessionsController#login as */*
+  Parameters: {"username"=>"jlepler"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "jlepler"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `login'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 543)
+
+
+Started GET "/7/my_projects" for 127.0.0.1 at 2021-03-10 15:38:15 -0500
+Processing by ClientsController#my_projects as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mProject Load (1.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."client_id" = ?[0m  [["client_id", 7]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+  [1m[36mProjectBid Load (1.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."project_id" = ?[0m  [["project_id", 8]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."project_id" = ?[0m  [["project_id", 9]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."project_id" = ?[0m  [["project_id", 10]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+Completed 200 OK in 50ms (Views: 32.8ms | ActiveRecord: 4.2ms | Allocations: 17143)
+
+
+Started GET "/7/contracts" for 127.0.0.1 at 2021-03-10 15:38:16 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.9ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 7]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.5ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 42ms (Views: 30.5ms | ActiveRecord: 4.5ms | Allocations: 15471)
+
+
+Started GET "/null/contracts" for 127.0.0.1 at 2021-03-10 15:38:26 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms | Allocations: 487)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Client with 'id'=null):
+  
+app/controllers/clients_controller.rb:13:in `my_contracts'
+Started GET "/login/jlepler" for 127.0.0.1 at 2021-03-10 15:38:36 -0500
+Processing by SessionsController#login as */*
+  Parameters: {"username"=>"jlepler"}
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "jlepler"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `login'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 543)
+
+
+Started GET "/null/contracts" for 127.0.0.1 at 2021-03-10 15:38:38 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.3ms | Allocations: 487)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Client with 'id'=null):
+  
+app/controllers/clients_controller.rb:13:in `my_contracts'
+Started POST "/clients" for 127.0.0.1 at 2021-03-10 15:38:54 -0500
+Processing by ClientsController#create as */*
+  Parameters: {"client"=>{"name"=>"John", "username"=>"jdoe"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clients_controller.rb:24:in `create'
+  [1m[36mClient Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "jdoe"], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:24:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/clients_controller.rb:24:in `create'
+  [1m[36mMarketplace Load (0.5ms)[0m  [1m[34mSELECT "marketplaces".* FROM "marketplaces" ORDER BY "marketplaces"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:26:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clients_controller.rb:26:in `create'
+  [1m[36mClient Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "jdoe"], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:26:in `create'
+  [1m[36mClient Create (1.2ms)[0m  [1m[32mINSERT INTO "clients" ("name", "username", "marketplace_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "John"], ["username", "jdoe"], ["marketplace_id", 4], ["created_at", "2021-03-10 20:38:54.552804"], ["updated_at", "2021-03-10 20:38:54.552804"]]
+  ↳ app/controllers/clients_controller.rb:26:in `create'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/clients_controller.rb:26:in `create'
+  [1m[36mClient Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."username" = ? AND "clients"."id" != ? LIMIT ?[0m  [["username", "jdoe"], ["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:27:in `create'
+Completed 200 OK in 47ms (Views: 0.3ms | ActiveRecord: 5.0ms | Allocations: 10758)
+
+
+Started GET "/null/contracts" for 127.0.0.1 at 2021-03-10 15:38:58 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms | Allocations: 487)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Client with 'id'=null):
+  
+app/controllers/clients_controller.rb:13:in `my_contracts'
+Started GET "/null/contracts" for 127.0.0.1 at 2021-03-10 15:39:00 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms | Allocations: 486)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Client with 'id'=null):
+  
+app/controllers/clients_controller.rb:13:in `my_contracts'
+Started GET "/null/contracts" for 127.0.0.1 at 2021-03-10 15:39:07 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms | Allocations: 486)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Client with 'id'=null):
+  
+app/controllers/clients_controller.rb:13:in `my_contracts'
+Started GET "/null/contracts" for 127.0.0.1 at 2021-03-10 15:39:18 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms | Allocations: 486)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Client with 'id'=null):
+  
+app/controllers/clients_controller.rb:13:in `my_contracts'
+Started GET "/login/jdoe" for 127.0.0.1 at 2021-03-10 15:39:25 -0500
+Processing by SessionsController#login as */*
+  Parameters: {"username"=>"jdoe"}
+  [1m[36mClient Load (0.4ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "jdoe"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `login'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 542)
+
+
+Started GET "/9/contracts" for 127.0.0.1 at 2021-03-10 15:39:31 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 9]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 5ms (Views: 1.8ms | ActiveRecord: 0.5ms | Allocations: 1108)
+
+
+Started GET "/9/my_projects" for 127.0.0.1 at 2021-03-10 15:39:33 -0500
+Processing by ClientsController#my_projects as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."client_id" = ?[0m  [["client_id", 9]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 639)
+
+
+Started GET "/null/contracts" for 127.0.0.1 at 2021-03-10 15:39:37 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms | Allocations: 487)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Client with 'id'=null):
+  
+app/controllers/clients_controller.rb:13:in `my_contracts'
+Started GET "/login/jlepler" for 127.0.0.1 at 2021-03-10 15:39:42 -0500
+Processing by SessionsController#login as */*
+  Parameters: {"username"=>"jlepler"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "jlepler"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `login'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 562)
+
+
+Started GET "/login/jlepler" for 127.0.0.1 at 2021-03-10 15:39:42 -0500
+Processing by SessionsController#login as */*
+  Parameters: {"username"=>"jlepler"}
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "jlepler"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `login'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 543)
+
+
+Started GET "/null/my_projects" for 127.0.0.1 at 2021-03-10 15:39:57 -0500
+Processing by ClientsController#my_projects as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."client_id" = ?[0m  [["client_id", nil]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 639)
+
+
+Started GET "/null/my_projects" for 127.0.0.1 at 2021-03-10 15:39:57 -0500
+Processing by ClientsController#my_projects as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."client_id" = ?[0m  [["client_id", nil]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 639)
+
+
+Started GET "/null/my_projects" for 127.0.0.1 at 2021-03-10 15:40:00 -0500
+Processing by ClientsController#my_projects as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."client_id" = ?[0m  [["client_id", nil]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 641)
+
+
+Started GET "/null/my_projects" for 127.0.0.1 at 2021-03-10 15:40:00 -0500
+Processing by ClientsController#my_projects as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."client_id" = ?[0m  [["client_id", nil]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 639)
+
+
+Started GET "/null/contracts" for 127.0.0.1 at 2021-03-10 15:40:01 -0500
+Started GET "/null/contracts" for 127.0.0.1 at 2021-03-10 15:40:01 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+Processing by ClientsController#my_contracts as */*
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms | Allocations: 677)
+
+
+  Parameters: {"id"=>"null"}
+  
+ActiveRecord::RecordNotFound (Couldn't find Client with 'id'=null):
+  
+app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+Completed 404 Not Found in 16ms (ActiveRecord: 0.1ms | Allocations: 12041)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Client with 'id'=null):
+  
+app/controllers/clients_controller.rb:13:in `my_contracts'
+Started GET "/null/contracts" for 127.0.0.1 at 2021-03-10 15:40:02 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms | Allocations: 486)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Client with 'id'=null):
+  
+app/controllers/clients_controller.rb:13:in `my_contracts'
+Started GET "/null/contracts" for 127.0.0.1 at 2021-03-10 15:40:02 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms | Allocations: 486)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Client with 'id'=null):
+  
+app/controllers/clients_controller.rb:13:in `my_contracts'
+Started GET "/login/jlepler" for 127.0.0.1 at 2021-03-10 15:40:05 -0500
+Processing by SessionsController#login as */*
+  Parameters: {"username"=>"jlepler"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "jlepler"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `login'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 562)
+
+
+Started GET "/login/jlepler" for 127.0.0.1 at 2021-03-10 15:40:05 -0500
+Started GET "/login/jlepler" for 127.0.0.1 at 2021-03-10 15:40:05 -0500
+Started GET "/login/jlepler" for 127.0.0.1 at 2021-03-10 15:40:05 -0500
+Processing by SessionsController#login as */*
+  Parameters: {"username"=>"jlepler"}
+Processing by SessionsController#login as */*
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "jlepler"], ["LIMIT", 1]]
+  Parameters: {"username"=>"jlepler"}
+  ↳ app/controllers/sessions_controller.rb:3:in `login'
+Processing by SessionsController#login as */*
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "jlepler"], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 874)
+
+
+  Parameters: {"username"=>"jlepler"}
+  ↳ app/controllers/sessions_controller.rb:3:in `login'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 1318)
+
+
+  ↳ app/controllers/sessions_controller.rb:3:in `login'
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "jlepler"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `login'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.9ms | Allocations: 1461)
+
+
+Started GET "/7/contracts" for 127.0.0.1 at 2021-03-10 15:40:06 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.8ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 7]]
+Started GET "/7/contracts" for 127.0.0.1 at 2021-03-10 15:40:06 -0500
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Started GET "/7/contracts" for 127.0.0.1 at 2021-03-10 15:40:06 -0500
+Started GET "/7/contracts" for 127.0.0.1 at 2021-03-10 15:40:06 -0500
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Processing by ClientsController#my_contracts as */*
+Processing by ClientsController#my_contracts as */*
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Parameters: {"id"=>"7"}
+Processing by ClientsController#my_contracts as */*
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Parameters: {"id"=>"7"}
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  Parameters: {"id"=>"7"}
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mProjectBid Load (0.4ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mContract Load (0.1ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 7]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.1ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mFreelancer Load (0.1ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 7]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 7]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.3ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 48ms (Views: 43.7ms | ActiveRecord: 2.6ms | Allocations: 14870)
+
+
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.3ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.3ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 47ms (Views: 38.2ms | ActiveRecord: 1.9ms | Allocations: 19980)
+
+
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+Completed 200 OK in 52ms (Views: 44.4ms | ActiveRecord: 1.4ms | Allocations: 21794)
+
+
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 51ms (Views: 39.7ms | ActiveRecord: 2.2ms | Allocations: 22103)
+
+
+Started GET "/7/my_projects" for 127.0.0.1 at 2021-03-10 15:40:07 -0500
+Processing by ClientsController#my_projects as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mProject Load (0.8ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."client_id" = ?[0m  [["client_id", 7]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+  [1m[36mProjectBid Load (0.7ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."project_id" = ?[0m  [["project_id", 8]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."project_id" = ?[0m  [["project_id", 9]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."project_id" = ?[0m  [["project_id", 10]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+Completed 200 OK in 26ms (Views: 23.2ms | ActiveRecord: 1.8ms | Allocations: 3419)
+
+
+Started GET "/7/my_projects" for 127.0.0.1 at 2021-03-10 15:40:07 -0500
+Started GET "/7/my_projects" for 127.0.0.1 at 2021-03-10 15:40:07 -0500
+Started GET "/7/my_projects" for 127.0.0.1 at 2021-03-10 15:40:07 -0500
+Processing by ClientsController#my_projects as */*
+Processing by ClientsController#my_projects as */*
+Processing by ClientsController#my_projects as */*
+  Parameters: {"id"=>"7"}
+  Parameters: {"id"=>"7"}
+  Parameters: {"id"=>"7"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."client_id" = ?[0m  [["client_id", 7]]
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."client_id" = ?[0m  [["client_id", 7]]
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."client_id" = ?[0m  [["client_id", 7]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+  [1m[36mProjectBid Load (0.3ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."project_id" = ?[0m  [["project_id", 8]]
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."project_id" = ?[0m  [["project_id", 8]]
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."project_id" = ?[0m  [["project_id", 8]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."project_id" = ?[0m  [["project_id", 9]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."project_id" = ?[0m  [["project_id", 9]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."project_id" = ?[0m  [["project_id", 10]]
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."project_id" = ?[0m  [["project_id", 9]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."project_id" = ?[0m  [["project_id", 10]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."project_id" = ?[0m  [["project_id", 10]]
+Completed 200 OK in 20ms (Views: 18.5ms | ActiveRecord: 0.8ms | Allocations: 8606)
+
+
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+Completed 200 OK in 24ms (Views: 22.6ms | ActiveRecord: 0.6ms | Allocations: 10073)
+
+
+Completed 200 OK in 23ms (Views: 22.4ms | ActiveRecord: 0.6ms | Allocations: 10244)
+
+
+Started GET "/7/contracts" for 127.0.0.1 at 2021-03-10 15:40:14 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 7]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.1ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.3ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 20ms (Views: 15.8ms | ActiveRecord: 1.6ms | Allocations: 6017)
+
+
+Started GET "/7/my_projects" for 127.0.0.1 at 2021-03-10 15:40:15 -0500
+Processing by ClientsController#my_projects as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."client_id" = ?[0m  [["client_id", 7]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+  [1m[36mProjectBid Load (0.3ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."project_id" = ?[0m  [["project_id", 8]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+  [1m[36mProjectBid Load (0.3ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."project_id" = ?[0m  [["project_id", 9]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."project_id" = ?[0m  [["project_id", 10]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 1.1ms | Allocations: 3377)
+
+
+Started GET "/freelancers/7" for 127.0.0.1 at 2021-03-10 15:40:21 -0500
+Started GET "/freelancers/8" for 127.0.0.1 at 2021-03-10 15:40:21 -0500
+Processing by FreelancersController#show as */*
+Processing by FreelancersController#show as */*
+  Parameters: {"id"=>"7"}
+  Parameters: {"id"=>"8"}
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/freelancers_controller.rb:10:in `show'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 613)
+
+
+  ↳ app/controllers/freelancers_controller.rb:10:in `show'
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 1600)
+
+
+Started GET "/7/contracts" for 127.0.0.1 at 2021-03-10 15:40:34 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 7]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.1ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.3ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 21ms (Views: 17.0ms | ActiveRecord: 1.7ms | Allocations: 6017)
+
+
+Started GET "/7/my_projects" for 127.0.0.1 at 2021-03-10 15:40:35 -0500
+Processing by ClientsController#my_projects as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."client_id" = ?[0m  [["client_id", 7]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."project_id" = ?[0m  [["project_id", 8]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."project_id" = ?[0m  [["project_id", 9]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."project_id" = ?[0m  [["project_id", 10]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.7ms | Allocations: 3377)
+
+
+Started GET "/7/contracts" for 127.0.0.1 at 2021-03-10 15:40:36 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 7]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.3ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 19ms (Views: 15.4ms | ActiveRecord: 1.7ms | Allocations: 6017)
+
+
+Started GET "/null/contracts" for 127.0.0.1 at 2021-03-10 15:40:40 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms | Allocations: 487)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Client with 'id'=null):
+  
+app/controllers/clients_controller.rb:13:in `my_contracts'
+Started GET "/login/jlepler" for 127.0.0.1 at 2021-03-10 15:55:26 -0500
+Started GET "/login/jlepler" for 127.0.0.1 at 2021-03-10 15:55:26 -0500
+Processing by SessionsController#login as */*
+  Parameters: {"username"=>"jlepler"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SessionsController#login as */*
+  Parameters: {"username"=>"jlepler"}
+  ↳ app/controllers/sessions_controller.rb:3:in `login'
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "jlepler"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/sessions_controller.rb:3:in `login'
+  ↳ app/controllers/sessions_controller.rb:3:in `login'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 1691)
+
+
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "jlepler"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `login'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 1819)
+
+
+Started GET "/null/contracts" for 127.0.0.1 at 2021-03-10 16:02:42 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"null"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.5ms | Allocations: 953)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Client with 'id'=null):
+  
+app/controllers/clients_controller.rb:13:in `my_contracts'
+Started GET "/login/jlepler" for 127.0.0.1 at 2021-03-10 16:02:44 -0500
+Processing by SessionsController#login as */*
+  Parameters: {"username"=>"jlepler"}
+  [1m[36mClient Load (0.9ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "jlepler"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `login'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.9ms | Allocations: 559)
+
+
+Started GET "/7/contracts" for 127.0.0.1 at 2021-03-10 16:02:45 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.9ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 7]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.6ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.6ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 29ms (Views: 23.8ms | ActiveRecord: 3.7ms | Allocations: 6098)
+
+
+Started GET "/7/contracts" for 127.0.0.1 at 2021-03-10 16:02:49 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 7]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.3ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.3ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 19ms (Views: 15.3ms | ActiveRecord: 1.7ms | Allocations: 6017)
+
+
+Started GET "/7/contracts" for 127.0.0.1 at 2021-03-10 16:02:53 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.1ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 7]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.1ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 19ms (Views: 15.5ms | ActiveRecord: 1.4ms | Allocations: 6017)
+
+
+Started GET "/null/my_projects" for 127.0.0.1 at 2021-03-10 16:06:04 -0500
+Processing by ClientsController#my_projects as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."client_id" = ?[0m  [["client_id", nil]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 660)
+
+
+Started GET "/null/contracts" for 127.0.0.1 at 2021-03-10 16:06:05 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms | Allocations: 487)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Client with 'id'=null):
+  
+app/controllers/clients_controller.rb:13:in `my_contracts'
+Started GET "/null/my_projects" for 127.0.0.1 at 2021-03-10 16:06:06 -0500
+Processing by ClientsController#my_projects as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."client_id" = ?[0m  [["client_id", nil]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms | Allocations: 638)
+
+
+Started GET "/null/my_projects" for 127.0.0.1 at 2021-03-10 16:06:07 -0500
+Processing by ClientsController#my_projects as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."client_id" = ?[0m  [["client_id", nil]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 639)
+
+
+Started GET "/null/contracts" for 127.0.0.1 at 2021-03-10 16:06:09 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms | Allocations: 487)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Client with 'id'=null):
+  
+app/controllers/clients_controller.rb:13:in `my_contracts'
+Started GET "/null/contracts" for 127.0.0.1 at 2021-03-10 16:06:10 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 486)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Client with 'id'=null):
+  
+app/controllers/clients_controller.rb:13:in `my_contracts'
+Started GET "/login/jlepler" for 127.0.0.1 at 2021-03-10 16:06:12 -0500
+Processing by SessionsController#login as */*
+  Parameters: {"username"=>"jlepler"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "jlepler"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `login'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 542)
+
+
+Started GET "/7/contracts" for 127.0.0.1 at 2021-03-10 16:06:13 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 7]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.3ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 22ms (Views: 18.5ms | ActiveRecord: 1.9ms | Allocations: 6017)
+
+
+Started GET "/7/my_projects" for 127.0.0.1 at 2021-03-10 16:06:15 -0500
+Processing by ClientsController#my_projects as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."client_id" = ?[0m  [["client_id", 7]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+  [1m[36mProjectBid Load (0.8ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."project_id" = ?[0m  [["project_id", 8]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."project_id" = ?[0m  [["project_id", 9]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."project_id" = ?[0m  [["project_id", 10]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+Completed 200 OK in 12ms (Views: 9.6ms | ActiveRecord: 1.8ms | Allocations: 3396)
+
+
+Started GET "/7/contracts" for 127.0.0.1 at 2021-03-10 16:06:16 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 7]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.3ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 19ms (Views: 15.9ms | ActiveRecord: 1.7ms | Allocations: 6017)
+
+
+Started GET "/7/my_projects" for 127.0.0.1 at 2021-03-10 16:06:17 -0500
+Processing by ClientsController#my_projects as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."client_id" = ?[0m  [["client_id", 7]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."project_id" = ?[0m  [["project_id", 8]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."project_id" = ?[0m  [["project_id", 9]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."project_id" = ?[0m  [["project_id", 10]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.8ms | Allocations: 3377)
+
+
+Started GET "/7/my_projects" for 127.0.0.1 at 2021-03-10 16:06:17 -0500
+Processing by ClientsController#my_projects as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."client_id" = ?[0m  [["client_id", 7]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."project_id" = ?[0m  [["project_id", 8]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."project_id" = ?[0m  [["project_id", 9]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."project_id" = ?[0m  [["project_id", 10]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+Completed 200 OK in 23ms (Views: 22.3ms | ActiveRecord: 0.7ms | Allocations: 3378)
+
+
+Started GET "/7/contracts" for 127.0.0.1 at 2021-03-10 16:06:19 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mClient Load (0.4ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 7]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 19ms (Views: 16.2ms | ActiveRecord: 1.6ms | Allocations: 6017)
+
+
+Started GET "/7/my_projects" for 127.0.0.1 at 2021-03-10 16:06:20 -0500
+Processing by ClientsController#my_projects as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."client_id" = ?[0m  [["client_id", 7]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."project_id" = ?[0m  [["project_id", 8]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."project_id" = ?[0m  [["project_id", 9]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."project_id" = ?[0m  [["project_id", 10]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.6ms | Allocations: 3377)
+
+
+Started GET "/7/contracts" for 127.0.0.1 at 2021-03-10 16:06:21 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 7]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 18ms (Views: 15.0ms | ActiveRecord: 1.6ms | Allocations: 6017)
+
+
+Started GET "/null/my_projects" for 127.0.0.1 at 2021-03-10 16:15:42 -0500
+Processing by ClientsController#my_projects as */*
+  Parameters: {"id"=>"null"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."client_id" = ?[0m  [["client_id", nil]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.8ms | Allocations: 1223)
+
+
+Started GET "/null/contracts" for 127.0.0.1 at 2021-03-10 16:15:43 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms | Allocations: 504)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Client with 'id'=null):
+  
+app/controllers/clients_controller.rb:13:in `my_contracts'
+Started GET "/null/my_projects" for 127.0.0.1 at 2021-03-10 16:15:44 -0500
+Processing by ClientsController#my_projects as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."client_id" = ?[0m  [["client_id", nil]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 638)
+
+
+Started GET "/null/contracts" for 127.0.0.1 at 2021-03-10 16:15:46 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms | Allocations: 487)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Client with 'id'=null):
+  
+app/controllers/clients_controller.rb:13:in `my_contracts'
+Started GET "/login/jlepler" for 127.0.0.1 at 2021-03-10 16:15:47 -0500
+Processing by SessionsController#login as */*
+  Parameters: {"username"=>"jlepler"}
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "jlepler"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `login'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 739)
+
+
+Started GET "/login/jlepler" for 127.0.0.1 at 2021-03-10 16:15:47 -0500
+Processing by SessionsController#login as */*
+  Parameters: {"username"=>"jlepler"}
+  [1m[36mClient Load (0.4ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."username" = ? LIMIT ?[0m  [["username", "jlepler"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `login'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.4ms | Allocations: 543)
+
+
+Started GET "/7/contracts" for 127.0.0.1 at 2021-03-10 16:15:48 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.6ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 7]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.3ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.3ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.1ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 20ms (Views: 16.3ms | ActiveRecord: 2.3ms | Allocations: 6267)
+
+
+Started GET "/7/contracts" for 127.0.0.1 at 2021-03-10 16:15:48 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 7]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.3ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.1ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 16ms (Views: 12.8ms | ActiveRecord: 1.6ms | Allocations: 6017)
+
+
+Started GET "/7/my_projects" for 127.0.0.1 at 2021-03-10 16:15:49 -0500
+Processing by ClientsController#my_projects as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."client_id" = ?[0m  [["client_id", 7]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+  [1m[36mProjectBid Load (0.3ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."project_id" = ?[0m  [["project_id", 8]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."project_id" = ?[0m  [["project_id", 9]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."project_id" = ?[0m  [["project_id", 10]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 0.9ms | Allocations: 3396)
+
+
+Started GET "/7/my_projects" for 127.0.0.1 at 2021-03-10 16:15:49 -0500
+Processing by ClientsController#my_projects as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."client_id" = ?[0m  [["client_id", 7]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+  [1m[36mProjectBid Load (0.3ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."project_id" = ?[0m  [["project_id", 8]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."project_id" = ?[0m  [["project_id", 9]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."project_id" = ?[0m  [["project_id", 10]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.8ms | Allocations: 3377)
+
+
+Started GET "/7/contracts" for 127.0.0.1 at 2021-03-10 16:15:52 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 7]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.3ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 20ms (Views: 16.7ms | ActiveRecord: 1.7ms | Allocations: 6017)
+
+
+Started GET "/7/my_projects" for 127.0.0.1 at 2021-03-10 16:15:54 -0500
+Processing by ClientsController#my_projects as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."client_id" = ?[0m  [["client_id", 7]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."project_id" = ?[0m  [["project_id", 8]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."project_id" = ?[0m  [["project_id", 9]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."project_id" = ?[0m  [["project_id", 10]]
+  ↳ app/controllers/clients_controller.rb:20:in `my_projects'
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.6ms | Allocations: 3378)
+
+
+Started GET "/null/contracts" for 127.0.0.1 at 2021-03-10 16:17:13 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms | Allocations: 487)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Client with 'id'=null):
+  
+app/controllers/clients_controller.rb:13:in `my_contracts'

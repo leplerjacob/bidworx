@@ -92,6 +92,7 @@ function login() {
         window.localStorage.setItem("user_id", res.user_id);
         setTimeout(() => {
           window.localStorage.clear();
+          init()
         }, 10000);
         ToggleInitDisplay(checkIfLoggedIn);
       } else {
