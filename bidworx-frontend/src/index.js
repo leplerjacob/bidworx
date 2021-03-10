@@ -1,10 +1,13 @@
-import { getAllClients, postNewUser, logInUser } from "./fetch.js";
+import { getAllClients, postNewUser, logInUser, postNewProject } from "./fetch.js";
 import Notification from "./Notification.js";
 import DisplayContracts from "./DisplayContracts.js";
 import checkIfLoggedIn from "./session.js";
 import SignUpForm from "./SignupForm.js";
 import ToggleInitDisplay from "./ToggleInitDisplay.js";
 import renderContractFullDetails from "./RenderContractFullDetails.js";
+import MakeProjectForm from "./MakeProjectForm.js";
+import ViewProjects from "./ViewProjects.js";
+import ViewBids from "./ViewBids.js";
 
 // Initial render of webpage
 document.addEventListener("DOMContentLoaded", () => {
@@ -100,26 +103,25 @@ function login() {
 function navigation() {
   const nav = document.querySelector(".navigation");
   nav.addEventListener("click", (e) => {
-    console.log(e.target.className.split(" ")[1]);
     switch (e.target.className.split(" ")[1]) {
       case "view-contracts": {
         clearDash();
         DisplayContracts(renderContractFullDetails);
         break;
       }
-      case "view-contracts": {
+      case "make-project": {
         clearDash();
-        DisplayContracts(renderContractFullDetails);
+        MakeProjectForm(postNewProject, window.localStorage.getItem("user_id"));
         break;
       }
-      case "view-contracts": {
+      case "view-projects": {
         clearDash();
-        DisplayContracts(renderContractFullDetails);
+        ViewProjects();
         break;
       }
-      case "view-contracts": {
+      case "view-bids": {
         clearDash();
-        DisplayContracts(renderContractFullDetails);
+        ViewBids();
         break;
       }
       default:

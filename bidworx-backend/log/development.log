@@ -25739,3 +25739,884 @@ Processing by ClientsController#my_contracts as */*
 Completed 200 OK in 16ms (Views: 12.9ms | ActiveRecord: 1.4ms | Allocations: 6017)
 
 
+Started GET "/3/contracts" for 127.0.0.1 at 2021-03-09 16:41:39 -0500
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mClient Load (0.8ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.8ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 3]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.6ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.6ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 124ms (Views: 79.8ms | ActiveRecord: 7.6ms | Allocations: 39523)
+
+
+Started GET "/3/contracts" for 127.0.0.1 at 2021-03-09 16:41:41 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 3]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.1ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.1ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 16ms (Views: 12.6ms | ActiveRecord: 1.3ms | Allocations: 6036)
+
+
+Started GET "/3/contracts" for 127.0.0.1 at 2021-03-09 16:42:03 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 3]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.3ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 16ms (Views: 12.7ms | ActiveRecord: 1.7ms | Allocations: 6036)
+
+
+Started GET "/3/contracts" for 127.0.0.1 at 2021-03-09 16:42:04 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 3]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 19ms (Views: 16.1ms | ActiveRecord: 1.5ms | Allocations: 6036)
+
+
+Started GET "/3/contracts" for 127.0.0.1 at 2021-03-09 16:42:26 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 3]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.1ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 13ms (Views: 10.4ms | ActiveRecord: 1.2ms | Allocations: 6017)
+
+
+Started GET "/3/contracts" for 127.0.0.1 at 2021-03-09 16:42:26 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 3]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.1ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.1ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 17ms (Views: 12.7ms | ActiveRecord: 1.4ms | Allocations: 6036)
+
+
+Started GET "/3/contracts" for 127.0.0.1 at 2021-03-09 17:04:11 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"3"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mClient Load (0.7ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (1.0ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 3]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.5ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.6ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 21ms (Views: 12.4ms | ActiveRecord: 4.6ms | Allocations: 6563)
+
+
+Started GET "/3/contracts" for 127.0.0.1 at 2021-03-09 17:04:12 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 3]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.3ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 30ms (Views: 27.2ms | ActiveRecord: 1.7ms | Allocations: 6018)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-09 17:07:23 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/jlepler/.rvm/gems/ruby-2.6.1/gems/railties-6.1.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jlepler/.rvm/gems/ruby-2.6.1/gems/railties-6.1.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.4ms | Allocations: 315)
+Completed 200 OK in 24ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 2447)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-03-09 17:07:23 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/3/contracts" for 127.0.0.1 at 2021-03-09 17:07:29 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 3]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.1ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 15ms (Views: 11.8ms | ActiveRecord: 1.2ms | Allocations: 6230)
+
+
+Started GET "/3/contracts" for 127.0.0.1 at 2021-03-09 17:07:40 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 3]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 20ms (Views: 16.6ms | ActiveRecord: 1.7ms | Allocations: 6017)
+
+
+Started GET "/3/contracts" for 127.0.0.1 at 2021-03-09 17:07:43 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mClient Load (0.5ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 3]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.3ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 22ms (Views: 17.2ms | ActiveRecord: 2.2ms | Allocations: 6017)
+
+
+Started GET "/3/contracts" for 127.0.0.1 at 2021-03-09 17:12:02 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.5ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 3]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 35ms (Views: 16.1ms | ActiveRecord: 1.6ms | Allocations: 6018)
+
+
+Started GET "/3/contracts" for 127.0.0.1 at 2021-03-09 18:42:28 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"3"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mClient Load (0.8ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (1.0ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 3]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.6ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.8ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.1ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 20ms (Views: 13.0ms | ActiveRecord: 4.6ms | Allocations: 6575)
+
+
+Started GET "/3/contracts" for 127.0.0.1 at 2021-03-09 18:43:06 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.1ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 3]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 15ms (Views: 12.5ms | ActiveRecord: 1.5ms | Allocations: 6017)
+
+
+Started GET "/3/contracts" for 127.0.0.1 at 2021-03-09 18:43:28 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 3]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.1ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.1ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 15ms (Views: 12.1ms | ActiveRecord: 1.3ms | Allocations: 6017)
+
+
+Started GET "/3/contracts" for 127.0.0.1 at 2021-03-09 18:43:42 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 3]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.3ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 17ms (Views: 13.9ms | ActiveRecord: 1.6ms | Allocations: 6017)
+
+
+Started GET "/3/contracts" for 127.0.0.1 at 2021-03-09 18:56:15 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"3"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 3]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.3ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 17ms (Views: 13.1ms | ActiveRecord: 2.0ms | Allocations: 6563)
+
+
+Started GET "/3/contracts" for 127.0.0.1 at 2021-03-09 18:57:28 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.1ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 3]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.1ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 25ms (Views: 21.9ms | ActiveRecord: 1.5ms | Allocations: 6018)
+
+
+Started GET "/3/contracts" for 127.0.0.1 at 2021-03-09 18:57:57 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.1ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 3]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.1ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 17ms (Views: 14.1ms | ActiveRecord: 1.4ms | Allocations: 6017)
+
+
+Started GET "/3/contracts" for 127.0.0.1 at 2021-03-09 18:58:26 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 3]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.1ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 17ms (Views: 13.5ms | ActiveRecord: 1.3ms | Allocations: 6017)
+
+
+Started GET "/3/contracts" for 127.0.0.1 at 2021-03-09 18:58:47 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 3]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.3ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 16ms (Views: 13.1ms | ActiveRecord: 1.6ms | Allocations: 6017)
+
+
+Started GET "/3/contracts" for 127.0.0.1 at 2021-03-09 19:02:00 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.1ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 3]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.1ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 15ms (Views: 12.1ms | ActiveRecord: 1.4ms | Allocations: 6017)
+
+
+Started GET "/3/contracts" for 127.0.0.1 at 2021-03-09 19:02:44 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 3]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (2.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.3ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 28ms (Views: 23.0ms | ActiveRecord: 3.9ms | Allocations: 6017)
+
+
+Started GET "/3/contracts" for 127.0.0.1 at 2021-03-09 19:03:27 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 3]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.4ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.1ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 15ms (Views: 11.8ms | ActiveRecord: 1.6ms | Allocations: 6017)
+
+
+Started GET "/3/contracts" for 127.0.0.1 at 2021-03-09 19:04:12 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.1ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 3]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.1ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.1ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 15ms (Views: 12.3ms | ActiveRecord: 1.4ms | Allocations: 6017)
+
+
+Started GET "/3/contracts" for 127.0.0.1 at 2021-03-09 19:11:13 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"3"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 3]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.1ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 17ms (Views: 12.3ms | ActiveRecord: 2.1ms | Allocations: 6563)
+
+
+Started GET "/3/contracts" for 127.0.0.1 at 2021-03-09 19:11:56 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 3]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.1ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 24ms (Views: 12.9ms | ActiveRecord: 1.4ms | Allocations: 6018)
+
+
+Started GET "/3/contracts" for 127.0.0.1 at 2021-03-09 19:14:14 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 3]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 17ms (Views: 13.6ms | ActiveRecord: 1.6ms | Allocations: 6017)
+
+
+Started GET "/3/contracts" for 127.0.0.1 at 2021-03-09 19:16:35 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 3]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.1ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 18ms (Views: 15.6ms | ActiveRecord: 1.4ms | Allocations: 6017)
+
+
+Started GET "/3/contracts" for 127.0.0.1 at 2021-03-09 19:17:15 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 3]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.1ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.1ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 16ms (Views: 12.9ms | ActiveRecord: 1.6ms | Allocations: 6017)
+
+
+Started GET "/3/contracts" for 127.0.0.1 at 2021-03-09 19:19:40 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 3]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.1ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.3ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 18ms (Views: 14.7ms | ActiveRecord: 1.7ms | Allocations: 6017)
+
+
+Started GET "/3/contracts" for 127.0.0.1 at 2021-03-09 19:35:42 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"3"}
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mClient Load (0.7ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (1.0ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 3]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.7ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.6ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.1ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 18ms (Views: 11.4ms | ActiveRecord: 4.3ms | Allocations: 6563)
+
+
+Started GET "/3/contracts" for 127.0.0.1 at 2021-03-09 19:36:38 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 3]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.3ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 15ms (Views: 12.4ms | ActiveRecord: 1.5ms | Allocations: 6017)
+
+
+Started GET "/3/contracts" for 127.0.0.1 at 2021-03-09 19:42:13 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"3"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 3]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.4ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.3ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 26ms (Views: 21.2ms | ActiveRecord: 2.5ms | Allocations: 6564)
+
+
+Started GET "/project" for 127.0.0.1 at 2021-03-09 19:42:34 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/project"):
+  
+Started GET "/3/contracts" for 127.0.0.1 at 2021-03-09 19:42:44 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.2ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 3]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.3ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 18ms (Views: 14.8ms | ActiveRecord: 1.5ms | Allocations: 6016)
+
+
+Started GET "/3/contracts" for 127.0.0.1 at 2021-03-09 19:46:19 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.1ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 3]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.1ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.2ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 18ms (Views: 15.1ms | ActiveRecord: 1.6ms | Allocations: 6017)
+
+
+Started GET "/project" for 127.0.0.1 at 2021-03-09 19:46:31 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/project"):
+  
+Started GET "/project" for 127.0.0.1 at 2021-03-09 19:46:41 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/project"):
+  
+Started GET "/3/contracts" for 127.0.0.1 at 2021-03-09 19:46:45 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.3ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 3]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.1ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.3ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.1ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 17ms (Views: 14.2ms | ActiveRecord: 1.5ms | Allocations: 6016)
+
+
+Started GET "/projects" for 127.0.0.1 at 2021-03-09 19:47:03 -0500
+Processing by ProjectsController#index as */*
+  Parameters: {"project"=>{}}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/projects_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 957)
+
+
+Started GET "/3/contracts" for 127.0.0.1 at 2021-03-09 19:47:15 -0500
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+  [1m[36mContract Load (0.1ms)[0m  [1m[34mSELECT "contracts".* FROM "contracts" WHERE "contracts"."client_id" = ?[0m  [["client_id", 3]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.1ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mFreelancer Load (0.1ms)[0m  [1m[34mSELECT "freelancers".* FROM "freelancers" WHERE "freelancers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+  [1m[36mProjectBid Load (0.2ms)[0m  [1m[34mSELECT "project_bids".* FROM "project_bids" WHERE "project_bids"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:14:in `my_contracts'
+Completed 200 OK in 15ms (Views: 12.4ms | ActiveRecord: 1.3ms | Allocations: 6017)
+
+
