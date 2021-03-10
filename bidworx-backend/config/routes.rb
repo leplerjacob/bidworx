@@ -2,11 +2,14 @@ Rails.application.routes.draw do
   resources :contracts
   resources :project_bids
   resources :projects
+  post '/projects', to: 'projects#create'
+
   resources :marketplaces
   resources :freelancers
   
   resources :clients
   get '/:id/contracts', to: 'clients#my_contracts'
+  get '/:id/my_projects', to: 'clients#my_projects'
 
   get '/login/:username', to: 'sessions#login'
 

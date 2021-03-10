@@ -30,7 +30,7 @@ marketplace.clients << khalin
 
 project1 = Project.create(title: "Need someone who has a full option already made LMS system for sale.", skills: "Create Problem-solving, Application Development, C++", description: "The system must have full documentation, and be scalable. Will need full support for at least 1-2 months after deployment", duration: "3-6 months", client_id: jacob.id);
 
-project2 = Project.create(title: "Backend Expert - Serverless, Parse, Node, Python, AWS Knowledge and Kubernetes.", skills: "Node, Python, AWS Knowledge, Kudernetes", description: "Looking for a backend database and security subject matter expert. Be able to write document for our support team", duration: "1-2 months", client_id: khalin.id)
+project2 = Project.create(title: "Backend Expert - Serverless, Parse, Node, Python, AWS Knowledge and Kubernetes.", skills: "Node, Python, AWS Knowledge, Kudernetes", description: "Looking for a backend database and security subject matter expert. Be able to write document for our support team", duration: "1-2 months", client_id: jacob.id)
 
 jim = Freelancer.create(name: "Jim", username: "jbob", skills: "JavaScript, C++, UI/UX Design, Python", marketplace_id: Marketplace.all.first.id )
 kay = Freelancer.create(name: "Kay", username: "kkim", skills: "Ruby, JavaScript, C++, UI/UX Design", marketplace_id: Marketplace.all.first.id)

@@ -65,7 +65,7 @@ section {
 }
 /* NOTIFICATION END */
 
-/* DASHBOARD SECTION START */
+/* BASE DASHBOARD SECTION START */
 section.dashboard {
   display: grid;
   grid-template-columns: 225px auto;
@@ -110,7 +110,7 @@ section.dashboard .sidebar .client {
 
 } */
 
-section.dashboard .container {
+section.dashboard .content.container {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 50px 1fr;
@@ -265,11 +265,46 @@ section.login-signup .container .signup .register button {
 /* BRING TO TOP UNDER "DASHBOARD" */
 
 /* DASHBOARD CLIENT CONTENT AREA */
-section.dashboard .container .client {
+
+/* DASHBOARD CLIENT HEADER START*/
+section.dashboard .content.container .content-header {
+  display: grid;
+  grid-template-columns: 10% 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+section.dashboard .content.container .content-header .navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+section.dashboard .content.container .content-header .navigation a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-align: center;
+  display: flex;
+  padding: 5px 0 5px 0;
+}
+
+section.dashboard .content.container .content-header .navigation a:hover {
+  box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, 0.8);
+}
+
+section.dashboard .content.container .content-header .navigation a span {
+  font-size: 1.125rem;
+  margin: auto;
+  position: relative;
+  z-index: -1;
+}
+/* DASHBOARD CLIENT HEADER END */
+
+section.dashboard .content.container .client {
   padding: 20px;
 }
 
-section.dashboard .container .client .contract-grid {
+section.dashboard .content.container .client .contract-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
@@ -278,19 +313,64 @@ section.dashboard .container .client .contract-grid {
   overflow: scroll;
 }
 
-section.dashboard .container .client .contract-grid .contract-grid-item {
+section.dashboard
+  .content.container
+  .client
+  .contract-grid
+  .contract-grid-item {
   display: grid;
   height: 40%;
   grid-template-rows: repeat(4, 25%);
   grid-template-areas:
-    "status title title"
+    "title title status"
     "fl_name . price"
     "description description description"
     "start_date . more_details";
   overflow: hidden;
+  background: whitesmoke;
+  border-radius: 5px;
 }
 
-section.dashboard .container .client .contract-grid .contract-grid-item > * {
+section.dashboard
+  .content.container
+  .client
+  .contract-grid
+  .contract-grid-item
+  .contract-title {
+  font-size: 1.125rem;
+}
+
+section.dashboard
+  .content.container
+  .client
+  .contract-grid
+  .contract-grid-item
+  .contract-status.pending {
+  color: rgb(255, 220, 61);
+}
+section.dashboard
+  .content.container
+  .client
+  .contract-grid
+  .contract-grid-item
+  .contract-status.completed {
+  color: green;
+}
+section.dashboard
+  .content.container
+  .client
+  .contract-grid
+  .contract-grid-item
+  .contract-status.delayed {
+  color: rgb(128, 0, 0);
+}
+
+section.dashboard
+  .content.container
+  .client
+  .contract-grid
+  .contract-grid-item
+  > * {
   overflow: hidden;
 }
 

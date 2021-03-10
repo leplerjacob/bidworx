@@ -14,6 +14,12 @@ class ClientsController < ApplicationController
         render json: @contracts, :except => [:updated_at], :include => [client: {only: :name}, freelancer: {only: [:name, :skills]}, project: {only: [:title, :description, :duration]}, project_bid: {only: :price}]
     end
 
+    def my_projects
+        @projects = Project.where(client_id: params[:id])
+        
+        render json: @projects, include: [project_bids: {only: [:price, :drop_date, :freelancer_id]}]
+    end
+
     def create
         @client = Client.create(client_params)
         puts @client

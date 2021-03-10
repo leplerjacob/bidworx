@@ -40,12 +40,12 @@ export default function MakeProjectForm(postNewProject, id) {
   const projectSkillsInput = document.createElement("input");
   projectSkillsInput.type = "text";
   projectSkillsInput.name = "project-skills";
+  projectSkillsInput.className = "project-skills"
   projectSkillsInput.addEventListener("keyup", (e) => {
-    // obj.skills = e.target.value.split(",").trim()
     const skills = e.target.value.split(",").map((skill) => {
       return skill.trim();
     });
-    obj.skills = skills;
+    obj.skills = skills.join(",");
   });
 
   const projectDurationLabel = document.createElement("label");
@@ -57,6 +57,7 @@ export default function MakeProjectForm(postNewProject, id) {
   projectDurationInput.name = "project-duration";
   projectDurationInput.className = "project-duration";
   projectDurationInput.addEventListener("keyup", (e) => {
+    console.log(e.target.value);
     obj.duration = e.target.value;
   });
 
@@ -79,7 +80,7 @@ export default function MakeProjectForm(postNewProject, id) {
   projectFormSubmit.className = "form-submit";
   projectFormSubmit.addEventListener("click", (e) => {
     e.preventDefault();
-    postNewProject(obj).then(() => {
+    postNewProject({project: obj}).then(() => {
       
     });
   });

@@ -1,4 +1,9 @@
-import { getAllClients, postNewUser, logInUser, postNewProject } from "./fetch.js";
+import {
+  getAllClients,
+  postNewUser,
+  logInUser,
+  postNewProject,
+} from "./fetch.js";
 import Notification from "./Notification.js";
 import DisplayContracts from "./DisplayContracts.js";
 import checkIfLoggedIn from "./session.js";
@@ -8,6 +13,7 @@ import renderContractFullDetails from "./RenderContractFullDetails.js";
 import MakeProjectForm from "./MakeProjectForm.js";
 import ViewProjects from "./ViewProjects.js";
 import ViewBids from "./ViewBids.js";
+import LogUserOut from "./Logout.js";
 
 // Initial render of webpage
 document.addEventListener("DOMContentLoaded", () => {
@@ -80,12 +86,14 @@ function login() {
   loginButton.addEventListener("submit", (e) => {
     e.preventDefault();
     const username = e.target.username.value;
-    console.log(username);
     logInUser(username).then((res) => {
       console.log(res.user_id);
       if (res.type == "success") {
         window.localStorage.setItem("user_id", res.user_id);
-        toggleInitDisplay();
+        setTimeout(() => {
+          window.localStorage.clear();
+        }, 10000);
+        ToggleInitDisplay(checkIfLoggedIn);
       } else {
         Notification(res).forEach((notify) => {
           const body = document.querySelector("body");
@@ -101,7 +109,7 @@ function login() {
 }
 
 function navigation() {
-  const nav = document.querySelector(".navigation");
+  const nav = document.querySelector(".client .navigation");
   nav.addEventListener("click", (e) => {
     switch (e.target.className.split(" ")[1]) {
       case "view-contracts": {
@@ -128,9 +136,38 @@ function navigation() {
         break;
     }
   });
+  const headerNav = document.querySelector(".content-header .navigation");
+  headerNav.addEventListener("click", (e) => {
+    switch (e.target.className.split(" ")[1]) {
+      case "messaged": {
+        // clearDash();
+        console.log("message");
+        break;
+      }
+      case "profile": {
+        // clearDash();
+        console.log("profile");
+        break;
+      }
+      case "chat-box": {
+        // clearDash();
+        console.log("chat-box");
+        break;
+      }
+      case "logout": {
+        // clearDash();
+        LogUserOut()
+        init()
+        break;
+      }
+      default:
+        break;
+    }
+  });
 }
 
 function clearDash() {
-  const el = document.querySelector(".content.container div:nth-child(2)");
+  const el = document.querySelector(".content.container > div:nth-child(2)");
+  console.log(el);
   el.innerHTML = "";
 }

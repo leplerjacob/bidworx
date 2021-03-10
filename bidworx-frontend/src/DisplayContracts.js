@@ -7,7 +7,9 @@ export default function DisplayContracts(renderContractFullDetails) {
   const cardsGrid = document.createElement("div");
   cardsGrid.className = "contract-grid";
 
-  fetch("http://localhost:3000/3/contracts")
+    const user_id = window.localStorage.getItem("user_id")
+
+  fetch(`http://localhost:3000/${user_id}/contracts`)
     .then((res) => res.json())
     .then((contracts) => {
       contracts.forEach((contract) => {
@@ -22,25 +24,43 @@ export default function DisplayContracts(renderContractFullDetails) {
         // Status
         const contractStatus = document.createElement("p");
         contractStatus.innerText = contract.status;
+        switch (contract.status) {
+          case "in progress": {
+            contractStatus.className = "contract-status pending"
+            break;
+          }
+          case "completed": {
+            contractStatus.className = "contract-status complete"
+            break;
+          }
+          case "delayed": {
+            contractStatus.className = "contract-status delayed"
+            break;
+          }
+          default: {
+            contractStatus.className = "contract-status"
+          }
+            break;
+        }
         contractStatus.style.gridArea = "status";
         // Freelancer
         const contractFreelancer = document.createElement("h3");
-        contractFreelancer.innerText = contract.freelancer.name;
+        contractFreelancer.innerText = "Freelancer: " + contract.freelancer.name;
         contractFreelancer.style.gridArea = "fl_name";
         // Price
         const contractPrice = document.createElement("h3");
-        contractPrice.innerText = contract.project_bid.price;
+        contractPrice.innerText = "Price: \n" + contract.project_bid.price;
         contractPrice.style.gridArea = "price";
         // Description
-        const contractDescription = document.createElement("p");
+        const contractDescription = document.createElement("h4");
         contractDescription.innerText =
           contract.project.description.length > 24
-            ? contract.project.description.substring(0, 24) + "..."
-            : contract.project.description;
+            ? "Description: \n" + contract.project.description.substring(0, 24) + "..."
+            : "Description: \n" + contract.project.description;
         contractDescription.style.gridArea = "description";
         // Start Date
         const contractStartDate = document.createElement("h3");
-        contractStartDate.innerText = contract.created_at;
+        contractStartDate.innerText = "Date Created: " + contract.created_at;
         contractStartDate.style.gridArea = "start_date";
         // Button
         const contractMoreDetails = document.createElement("button");
@@ -63,7 +83,7 @@ export default function DisplayContracts(renderContractFullDetails) {
         });
         cardsGrid.append(contractCard);
       });
-    });
+    }).catch(err => err);
 
   contentContainer.append(cardsGrid);
 }
