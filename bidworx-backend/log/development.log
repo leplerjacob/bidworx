@@ -42342,3 +42342,17 @@ Completed 404 Not Found in 3ms (ActiveRecord: 0.3ms | Allocations: 502)
 ActiveRecord::RecordNotFound (Couldn't find Client with 'id'=null):
   
 app/controllers/clients_controller.rb:13:in `my_contracts'
+Started GET "/null/contracts" for 127.0.0.1 at 2021-03-12 12:46:12 -0500
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ClientsController#my_contracts as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mClient Load (0.6ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/clients_controller.rb:13:in `my_contracts'
+Completed 404 Not Found in 25ms (ActiveRecord: 1.6ms | Allocations: 7004)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Client with 'id'=null):
+  
+app/controllers/clients_controller.rb:13:in `my_contracts'
