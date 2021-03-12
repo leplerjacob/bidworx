@@ -17,7 +17,7 @@ class ClientsController < ApplicationController
     def my_projects
         @projects = Project.where(client_id: params[:id])
         
-        render json: @projects, include: [project_bids: {only: [:price, :drop_date, :freelancer_id]}]
+        render json: @projects, include: [project_bids: {only: [:id, :price, :drop_date, :freelancer_id]}]
     end
 
     def create

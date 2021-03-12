@@ -21,3 +21,73 @@ Upon DOM load:
 
 (TOGGLE FUNCTION NOTES)
 1.) Toggle section according to logged-in
+
+Client Profile Deliverables:
+
+	- Left Grid Links
+		- Logo up top
+		
+		- Make a project
+		- View bids - User can select t
+						he freelancer's bid. 
+					 - Creates contract. Removes project from marketplace frontend
+		- 
+
+
+Freelancer can set duration in the bid
+
+User/Client functionality
+	Login/sign-up
+	Links and the response data
+	adding a project
+	viewing a project and its bids
+	choosing a freelancers bids
+	viewing current contracts
+	
+	stretch:
+		- Communicating with freelancer
+		through chat box
+
+Client - Contract Card Includes...
+	- Title of project
+		- Name of freelancer
+	- Bid Cost
+	- Duration
+	- Status => need to add to model
+	- More Details (button)
+
+
+Project Status: in progress, stuck, completed
+
+Create a project process:
+
+	Backend
+	- Build controller function to catch fetch call and create contract object
+	- Write a fetch call to create a 
+	- Delete bids that were not chosen
+	- Create boolean attribute for Project model. This will be used to show/hide projects from 'View Projects' (optional)
+	- Return created contract as json (stretch). This can be used to create a custom notification that contract has been created
+
+	Frontend
+	- Create button to initialize contract creation. Send user id, freelancer id, and project id to fetch call to send to backend.
+	- Redirect to Contracts page (stretch goal)
+	- Build out 'View Bids' page
+
+
+
+Add id of the bid to the checkbox, so then we can get the id when we click submit. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

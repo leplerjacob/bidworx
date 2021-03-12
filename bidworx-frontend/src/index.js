@@ -93,7 +93,7 @@ function login() {
         setTimeout(() => {
           window.localStorage.clear();
           init()
-        }, 10000);
+        }, 1000000);
         ToggleInitDisplay(checkIfLoggedIn);
       } else {
         Notification(res).forEach((notify) => {

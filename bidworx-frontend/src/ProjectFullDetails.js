@@ -1,6 +1,7 @@
-import { getBidFreelancer } from "./fetch.js";
+import { getBidFreelancer, createContract } from "./fetch.js";
 
 export default function ProjectFullDetails(project) {
+
   // Card Container
   const singleProjectCard = document.createElement("div");
   singleProjectCard.className = "project card container";
@@ -32,6 +33,9 @@ export default function ProjectFullDetails(project) {
   const projectBidInfoContainer = document.createElement("div");
   projectBidInfoContainer.className = "project-bid-info container";
 
+  let checkedBoxId;
+  let freelancerId;
+  
   project.project_bids.forEach(async (bid) => {
     let freelancerName;
     await getBidFreelancer(bid.freelancer_id).then(freelancer => {
@@ -52,14 +56,19 @@ export default function ProjectFullDetails(project) {
     const chooseBidCheckBox = document.createElement("input");
     chooseBidCheckBox.type = "checkbox";
     chooseBidCheckBox.className = "checkbox";
+
+
     chooseBidCheckBox.addEventListener("change", (e) => {
       const checkboxes = document.querySelectorAll('.checkbox')
       checkboxes.forEach(checkbox => {
         checkbox.checked = false
+        checkbox.removeAttribute("data-id")
       })
       e.target.checked = true;
+      e.target.dataset.id = `${bid.id}`
+      freelancerId = bid.freelancer_id
+      checkedBoxId = bid.id
     });
-
 
     freelancerItem.append(
       bidFreelancerName,
@@ -71,7 +80,15 @@ export default function ProjectFullDetails(project) {
     projectBidInfoContainer.append(freelancerItem);
   });
 
-  projectCardBody.append(projectName, projectDate, projectLastBid, projectDescription, projectBids, projectBidInfoContainer)
+
+  const projectSubmit = document.createElement('button')
+  projectSubmit.type = "submit"
+  projectSubmit.innerText = "Submit"
+  projectSubmit.addEventListener("click", ()=> {
+    createContract({bid_id: checkedBoxId, freelancer_id: freelancerId, client_id: project.client_id})
+  })
+
+  projectCardBody.append(projectName, projectDate, projectLastBid, projectDescription, projectBids, projectBidInfoContainer, projectSubmit)
 
   singleProjectCard.append(projectCardBody)
 
