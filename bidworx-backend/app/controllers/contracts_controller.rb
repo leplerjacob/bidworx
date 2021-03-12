@@ -6,6 +6,7 @@ class ContractsController < ApplicationController
     end
 
     def create
+        contract = Contract.create(project_bid_id: params["bid_id"],freelancer_id: params["freelancer_id"], project_id: params["project_id"],client_id: params["client_id"])
         byebug
         
     end

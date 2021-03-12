@@ -85,7 +85,8 @@ export default function ProjectFullDetails(project) {
   projectSubmit.type = "submit"
   projectSubmit.innerText = "Submit"
   projectSubmit.addEventListener("click", ()=> {
-    createContract({bid_id: checkedBoxId, freelancer_id: freelancerId, client_id: project.client_id})
+    console.log(checkedBoxId);
+    createContract({bid_id: checkedBoxId, freelancer_id: freelancerId, client_id: project.client_id, project_id: project.id})
   })
 
   projectCardBody.append(projectName, projectDate, projectLastBid, projectDescription, projectBids, projectBidInfoContainer, projectSubmit)

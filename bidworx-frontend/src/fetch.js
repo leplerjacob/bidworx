@@ -43,7 +43,6 @@ export async function getAllProjects(id){
 export async function getBidFreelancer(id){
   const response = await fetch(`http://localhost:3000/freelancers/${id}`)
   const data = await response.json()
-  console.log(response, data);
   return data
 }
 

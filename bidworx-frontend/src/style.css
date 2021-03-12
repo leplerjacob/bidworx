@@ -1,5 +1,7 @@
 /* Stretch goals to separate file delivery with webpacker */
 
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lobster&family=Stick&display=swap');
+
 /* RESETS */
 * {
   margin: 0;
@@ -89,7 +91,7 @@ section.dashboard .sidebar .navigation a {
 }
 
 section.dashboard .sidebar .navigation a:hover {
-  box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, 0.8);
+  box-shadow: inset 0 0 10px 2px rgba(0, 53, 133, 0.8);
 }
 
 section.dashboard .sidebar .navigation a span {
@@ -164,6 +166,7 @@ section.login-signup .container .card .login {
   grid-template-rows: 1fr 1fr;
   height: 100%;
   width: 100%;
+  background: #1d649f;
 }
 /* LOGIN UPPER START */
 section.login-signup .container .login .login-upper {
@@ -222,6 +225,7 @@ section.login-signup .container .signup {
   grid-template-rows: 20% 10% 22% 8% 1fr;
   height: 100%;
   width: 100%;
+  background: #15e398;
 }
 
 section.login-signup .container .signup .motto {
@@ -289,7 +293,7 @@ section.dashboard .content.container .content-header .navigation a {
 }
 
 section.dashboard .content.container .content-header .navigation a:hover {
-  box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, 0.8);
+  box-shadow: inset 0 0 10px 2px rgba(0, 53, 133, 0.8);
 }
 
 section.dashboard .content.container .content-header .navigation a span {
@@ -401,4 +405,16 @@ section.dashboard
   .contract-more-details {
   border: none;
   background: rgb(218, 218, 218);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Stick', sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  background: -webkit-linear-gradient(#341671, #15e398);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
